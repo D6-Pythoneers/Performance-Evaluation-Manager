@@ -4,7 +4,7 @@
 - Majed Al Swaeer
 - Renad Alkhalafat
 - Hamza Ahmad
-- Odeh Abuzaid
+- Odeh Abuzaid  - Team Leader
 
 
 ## Cooperation Plan
