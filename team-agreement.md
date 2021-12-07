@@ -75,7 +75,7 @@ Describe at least:
 - How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
 Once our idea approved , the project must be analyzed and tasks must be created and distributed among team members based on their level of skills and strengths , which will be described in our project management tool ( TRELLO ) .
 - What project management tool will be used?
-  - Trello 
+  - [Trello Board](https://trello.com/b/U50WFqkZ/pem). 
 
 ## Git Process
 
