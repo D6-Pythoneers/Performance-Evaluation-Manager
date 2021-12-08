@@ -77,11 +77,14 @@ List the functionality of your product. This will consist of tasks such as the f
 
 ### Data Flow
 
+Admin inform the head of scholls the evaulation period is open within 15 days ,each head of school start evalaute each teacher in his school ,then each teacher views thier evaluation and approved  ,after the head finish all teachers evaluation the admin will get notified to take necessary actios.
 
+## Non-Functional Requirements
 
-## Non-Functional Requirements 
+1. Security :
 
-1. Security
-2. Usability
-3. Testability
-4. etc….
+only registerd admin,heads,teachers can login to the website with specific permissions like(only heads can evaluate teachers)
+
+2. Usability :
+
+the website layout is clear,freindly,easy to use ,so the user can access whaterver he want with ease
