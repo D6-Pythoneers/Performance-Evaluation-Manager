@@ -77,7 +77,7 @@ List the functionality of your product. This will consist of tasks such as the f
 
 ### Data Flow
 
-Admin inform the head of scholls the evaulation period is open within 15 days ,each head of school start evalaute each teacher in his school ,then each teacher views thier evaluation and approved  ,after the head finish all teachers evaluation the admin will get notified to take necessary actios.
+Admin inform the head of schools the evaulation period is open within 15 days ,each head of school start evalaute each teacher in his school ,then each teacher views thier evaluation and approve it,after the head finish all teachers evaluation the admin will get notified to take necessary actios.
 
 ## Non-Functional Requirements
 
