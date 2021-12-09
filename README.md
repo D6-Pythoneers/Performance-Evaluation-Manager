@@ -29,6 +29,8 @@ It allows the ministry to ensure that teachers and departments across the countr
   - Server : Docker
   - Deployment : vercel-Heroku
 
-## [Wireframe](./wireframe/Wireframes.md)
 
-## [Diagrams](./diagrams/Diagrams.md)
+## [Trello Board](https://trello.com/b/U50WFqkZ/pem).
+
+## [Requirements](https://github.com/D6-Pythoneers/Performance-Evaluation-Manager/blob/develop/requirements.md).
+
