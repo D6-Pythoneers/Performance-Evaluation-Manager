@@ -19,6 +19,16 @@ The process of evaluating teachers across the country still Paper-Based Process.
 performance management system is a mechanism for tracking the performance of teachers consistently and measurably.
 It allows the ministry to ensure that teachers and departments across the country are working effectively towards achieving the strategic goals.
 
+## Architecture
+
+> Client First Architecture
+  
+- Front-End : Next.js
+- Back-End : django
+- Database : PostgreSQL
+- Server : Docker
+- Deployment : vercel-Heroku
+
 ## wireframe
 
 ![wf1](./wireframe/sample-login.png)
@@ -27,6 +37,6 @@ It allows the ministry to ensure that teachers and departments across the countr
 ![wf1](./wireframe/sample-evaluation-form.png)
 ![wf1](./wireframe/sample-princebal-dashboard.png)
 
-## Software Requirements
+## [Trello Board](https://trello.com/b/U50WFqkZ/pem)
 
-[Software Requirements](requirements.md)
+## [Requirements](requirements.md)
