@@ -23,14 +23,20 @@ It allows the ministry to ensure that teachers and departments across the countr
 
 > Client First Architecture
   
-  - Front-End : Next.js
-  - Back-End : django
-  - Database : PostgreSQL
-  - Server : Docker
-  - Deployment : vercel-Heroku
+- Front-End : Next.js
+- Back-End : django
+- Database : PostgreSQL
+- Server : Docker
+- Deployment : vercel-Heroku
 
+## wireframe
+
+![wf1](./wireframe/sample-login.png)
+![wf1](./wireframe/sample-teacher-dashboard.png)
+![wf1](./wireframe/sample-teacher-profile.png)
+![wf1](./wireframe/sample-evaluation-form.png)
+![wf1](./wireframe/sample-princebal-dashboard.png)
 
 ## [Trello Board](https://trello.com/b/U50WFqkZ/pem)
 
-## [Requirements](https://github.com/D6-Pythoneers/Performance-Evaluation-Manager/blob/develop/requirements.md)
-
+## [Requirements](requirements.md)
