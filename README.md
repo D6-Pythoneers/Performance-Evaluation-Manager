@@ -26,3 +26,7 @@ It allows the ministry to ensure that teachers and departments across the countr
 ![wf1](./wireframe/sample-teacher-profile.png)
 ![wf1](./wireframe/sample-evaluation-form.png)
 ![wf1](./wireframe/sample-princebal-dashboard.png)
+
+## Software Requirements
+
+[Software Requirements](requirements.md)
