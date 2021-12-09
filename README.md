@@ -30,7 +30,7 @@ It allows the ministry to ensure that teachers and departments across the countr
   - Deployment : vercel-Heroku
 
 
-## [Trello Board](https://trello.com/b/U50WFqkZ/pem).
+## [Trello Board](https://trello.com/b/U50WFqkZ/pem)
 
-## [Requirements](https://github.com/D6-Pythoneers/Performance-Evaluation-Manager/blob/develop/requirements.md).
+## [Requirements](https://github.com/D6-Pythoneers/Performance-Evaluation-Manager/blob/develop/requirements.md)
 
