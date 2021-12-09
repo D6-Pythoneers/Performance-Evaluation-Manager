@@ -1,7 +1,21 @@
-# wireframes
+# Wireframes
+
+## Login
 
 ![wf1](./sample-login.png)
-![wf1](./sample-princebal-dashboard.png)
-![wf1](./sample-teacher-dashboard-profile.png)
+
+## Teacher Dashboard
+
 ![wf1](./sample-teacher-dashboard.png)
-![wf1](./sample-evaulation-form.png)
+
+## User Profile
+
+![wf1](./sample-teacher-profile.png)
+
+## Principal Dashboard
+
+![wf1](./sample-princebal-dashboard.png)
+
+## Evaluation Form
+
+![wf1](./sample-evaluation-form.png)
