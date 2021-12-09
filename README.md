@@ -22,7 +22,7 @@ It allows the ministry to ensure that teachers and departments across the countr
 ## wireframe
 
 ![wf1](./wireframe/sample-login.png)
-![wf1](./wireframe/sample-princebal-dashboard.png)
-![wf1](./wireframe/sample-teacher-dashboard-profile.png)
 ![wf1](./wireframe/sample-teacher-dashboard.png)
-![wf1](./wireframe/sample-evaulation-form.png)
+![wf1](./wireframe/sample-teacher-profile.png)
+![wf1](./wireframe/sample-evaluation-form.png)
+![wf1](./wireframe/sample-princebal-dashboard.png)
