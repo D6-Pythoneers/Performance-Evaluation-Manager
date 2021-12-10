@@ -34,3 +34,7 @@ It allows the ministry to ensure that teachers and departments across the countr
 ## [Trello Board](https://trello.com/b/U50WFqkZ/pem)
 
 ## [Requirements](requirements.md)
+
+## Database
+
+![class](./diagrams/db_diagram.JPG)
