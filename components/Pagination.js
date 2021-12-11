@@ -1,6 +1,8 @@
 import React from 'react'
-
+import { useAuth } from '../contexts/auth'
 export default function Pagination() {
+    const {logout} = useAuth()
+
     return (
         <div className='relative flex flex-col justify-between w-64 min-h-full border border-t-0 border-black'>
             <div>
@@ -9,7 +11,7 @@ export default function Pagination() {
             </div>
             
             
-            <button className='w-64 p-4 text-xl text-red-600 hover:bg-red-200 hover:text-black'>Log Out</button>
+            <button onClick={() => logout()} className='w-64 p-4 text-xl text-red-600 hover:bg-red-200 hover:text-black'>Log Out</button>
         </div>
     )
 }
