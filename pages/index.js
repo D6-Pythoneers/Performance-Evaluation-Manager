@@ -4,7 +4,7 @@ import Pagination from "../components/Pagination";
 import Header from "../components/Header";
 export default function Home() {
   return (
-    <div className="w-3/4 m-auto">
+    <div className="w-3/4 min-h-screen m-auto">
       <Header />
       <div className="flex">
         <Pagination />

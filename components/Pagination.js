@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Pagination() {
     return (
-        <div className='relative flex flex-col justify-between w-64 border border-t-0 border-black'>
+        <div className='relative flex flex-col justify-between w-64 min-h-full border border-t-0 border-black'>
             <div>
             <div className='p-4 text-lg border border-t-0 border-l-0 border-r-0 border-black cursor-pointer hover:bg-gray-200'>Dashboard</div>
             <div className='p-4 text-lg border border-t-0 border-l-0 border-r-0 border-black cursor-pointer hover:bg-gray-200'>Profile</div>
