@@ -1,8 +1,10 @@
 import React from "react";
 import TeacherContactInformationForm from "./TeacherContactInformationForm";
-export default function TeacherDashboard() {
+import TeacherDetails from "./TeacherDetails";
+export default function TeacherProfile() {
   return (
-    <div>
+    <div className="flex w-3/4 border border-red-700">
+        <TeacherDetails/>
         <TeacherContactInformationForm/>
     </div>
   );

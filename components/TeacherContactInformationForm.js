@@ -2,53 +2,53 @@ import React from "react";
 
 export default function TeacherContactInformationForm() {
   return (
-    <div className="w-full max-w-xs">
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <div className="mb-4 flex justify-between">
+    <div className="w-full max-w-sm">
+      <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md">
+        <div className="gap-4 mb-4 align-middle ">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block mb-2 text-sm font-bold text-gray-700"
             htmlFor="username"
           >
             Phone No.
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
             id="phone_number"
             type="tel"
             placeholder="07xxxxxxxx"
           />
         </div>
-        <div className="mb-6 flex justify-between">
+        <div className="mb-6 ">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block mb-2 text-sm font-bold text-gray-700"
             htmlFor="email"
           >
             Email
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
             id="email"
             type="email"
-            placeholder="teacher@edu.gov.jo"
+            placeholder="email"
           />
         </div>
-        <div className="mb-4 flex justify-between">
+        <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block mb-2 text-sm font-bold text-gray-700"
             htmlFor="address"
           >
             Address
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
             id="address"
             type="text"
-            placeholder="Address"
+            placeholder="address"
           />
         </div>
         <div className="flex items-center justify-center mt-4">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
             type="button"
           >
             Edit

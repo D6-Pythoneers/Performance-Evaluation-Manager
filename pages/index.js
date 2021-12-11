@@ -1,9 +1,9 @@
 import Head from "next/head";
-import TeacherDashboard from "../components/TeacherDashboard";
+import TeacherProfile from "../components/TeacherProfile";
 export default function Home() {
   return (
     <>
-      <TeacherDashboard />
+      <TeacherProfile />
     </>
   );
 }
