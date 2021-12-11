@@ -3,7 +3,7 @@ import React from "react";
 export default function TeacherContactInformationForm() {
   return (
     <div className="w-full max-w-sm">
-      <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md">
+      <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded ">
         <div className="gap-4 mb-4 align-middle ">
           <label
             className="block mb-2 text-sm font-bold text-gray-700"
