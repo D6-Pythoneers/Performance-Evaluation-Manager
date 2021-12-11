@@ -1,6 +1,8 @@
 import React from "react";
-
+import { useAuth } from "../contexts/auth";
 export default function TeacherContactInformationForm() {
+  const {user} = useAuth();
+  const {email} = user
   return (
     <div className="w-full max-w-sm">
       <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded ">
@@ -30,6 +32,7 @@ export default function TeacherContactInformationForm() {
             id="email"
             type="email"
             placeholder="email"
+            value = {email}
           />
         </div>
         <div className="mb-4">

@@ -1,6 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import { useAuth } from "../contexts/auth";
 export default function TeacherDetails() {
+  const { user } = useAuth();
+  const {
+    role,
+    name,
+    sid,
+    eid,
+    qualification,
+    nid,
+    directorate,
+    user_id,
+    email,
+  } = user;
   const myLoader = ({ src }) => {
     return "https://miro.medium.com/max/600/1*PiHoomzwh9Plr9_GA26JcA.png";
   };
@@ -20,22 +33,22 @@ export default function TeacherDetails() {
       {/* this is the unordered list the will show the details of each teacher */}
       <ul className="mx-auto text-xl ">
         <li>
-          Name: <strong className="mx-3">John Doe</strong>
+          Name: <strong className="mx-3">{name}</strong>
         </li>
         <li>
           School: <strong className="mx-3">Excellence Schools</strong>
         </li>
         <li>
-          Qualification: <strong className="mx-3">Bachelor</strong>
+          Qualification: <strong className="mx-3">{qualification}</strong>
         </li>
         <li>
-          Directorate: <strong className="mx-3">Amman 1</strong>
+          Directorate: <strong className="mx-3">{directorate}</strong>
         </li>
         <li>
-          National ID: <strong className="mx-3">2000725801</strong>
+          National ID: <strong className="mx-3">2{nid}</strong>
         </li>
         <li>
-          Employee ID: <strong className="mx-3">2524521</strong>
+          Employee ID: <strong className="mx-3">{eid}</strong>
         </li>
       </ul>
     </div>
