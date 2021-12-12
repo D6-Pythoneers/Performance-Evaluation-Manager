@@ -8,7 +8,7 @@ export default function Header() {
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden"></div>
           <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div class="flex-shrink-0 flex items-center">
-              <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/50/3B82F6/external-performance-business-flatart-icons-outline-flatarticons.png" />
+              <h1 className="text-4xl text-gray-100">PEM</h1>
             </div>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
