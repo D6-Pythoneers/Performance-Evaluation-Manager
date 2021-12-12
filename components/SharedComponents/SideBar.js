@@ -2,8 +2,8 @@ import React from "react";
 
 export default function SideBar() {
   return (
-    <div className="flex items-center bg-gray-100">
-      <div className="flex w-full max-w-xs p-4 bg-gray-800" style={{"height": "870px"}}>
+    <div className="flex items-center my-0 bg-gray-100">
+      <div className="flex p-4 my-0 bg-gray-800 w-72" style={{"height": "750px"}}>
         <ul className="flex flex-col justify-between w-full">
           <div>
             <li className="my-px">
