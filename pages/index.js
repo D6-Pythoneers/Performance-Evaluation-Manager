@@ -1,28 +1,43 @@
-import Head from 'next/head'
-import LoginForm from '../components/LoginForm'
-import EvalutionTable from '../components/evalutionTable'
+import TeacherProfile from "../components/TeacherDashboard/TeacherProfile";
+import Pagination from "../components/TeacherDashboard/Pagination";
+import Header from "../components/Header";
+import LoginForm from "../components/LoginForm";
+import { useAuth } from "../contexts/auth";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import Redirect from "../components/Redirect";
+import Footer from "../components/Footer";
 export default function Home() {
+  const { user } = useAuth();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <>
+      {user ? (
+        <div >
+          <Header />
+          <div className="flex w-full ">
+            <Pagination />
+            <div className="w-full bg-gray-100">
+              <Redirect />
+            </div>
+          </div>
 
-      <Head>
-        <title>Performance Evaluation System</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      {/* <header>
-        <img className="h-24 min-h-full" src='https://bohatala.com/wp-content/uploads/2015/08/performance-management.jpg'></img>
-      </header>  */}
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <EvalutionTable/>
-      </main>
-      {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <LoginForm/>
-      </main> */}
-
-      {/* <footer className="flex items-center justify-center w-full h-24 border-t">
-        &copy; Performance Evaluation System. All rights reserved.
-      </footer> */}
-    </div>
-  )
+          <Footer />
+        </div>
+      ) : (
+        <LoginForm />
+      )}
+    </>
+  );
 }
+// <div className="min-h-screen bg-gray-100">
+// <Header />
+// <main className="flex">
+//   <SideBar />
+//   <div className="flex w-full ">
+//     <UserDetails />
+//     <UserContactInformationForm/>
+//   </div>
+// </main>
+
+// <Footer />
+// </div>
