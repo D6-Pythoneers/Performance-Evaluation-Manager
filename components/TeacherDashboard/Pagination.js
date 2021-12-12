@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 import { useAuth } from "../../contexts/auth";
 export default function Pagination() {
+  const [clicked, setClicked] = useState("dashboard")
   const { logout } = useAuth();
   
   return (
@@ -11,7 +13,7 @@ export default function Pagination() {
             <li className="my-px">
               <a
                 href="#"
-                className="flex flex-row items-center h-12 px-4 text-gray-600 bg-gray-100 rounded-lg"
+                className={`flex flex-row items-center h-12 px-4  rounded-lg ${clicked == "dashboard" ? "text-gray-600 bg-gray-100" :"text-gray-500" }`}
               >
                 <span className="flex items-center justify-center text-lg text-gray-500">
                   <svg
