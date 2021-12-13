@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAuth } from '../contexts/auth'
-import ManagerDashboard from './ManagerDashboard/Index'
+import ManagerDashboard from './ManagerDashboard/ManagerDashboard'
 import Index from './TeacherDashboard/Index'
 import School from '../pages/api/School'
 export default function Redirect() {
@@ -13,7 +13,7 @@ export default function Redirect() {
       {user.role == 'teacher' ? (
         <Index />
       ) : user.role == 'manager' ? (
-        <ManagerDashboard />
+        <ManagerDashboard school={school} />
       ) : (
         false
       )}
