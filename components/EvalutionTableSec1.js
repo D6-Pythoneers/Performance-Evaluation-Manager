@@ -3,7 +3,7 @@ import React from 'react'
 export default function EvalutionTableSec1() {
     return (
         <div>
-            <h2 className="pb-4  bg-gray-200 text-left font-bold">Part One: Instructions for filling this form</h2>
+            <h2 className="pb-4 mt-4 bg-gray-200 text-left font-bold">Part One: Instructions for filling this form</h2>
             <div className="grid grid-cols-2 mb-5">
                     <div className="grid grid-rows-1 gap-2 p-2 m-2  rounded-md">
                         <ol className=" w-10/12 list-decimal  text-left text-justify">

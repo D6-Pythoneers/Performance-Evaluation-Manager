@@ -5,6 +5,12 @@ import EvalutionTableHeader from './EvalutionTableHeader'
 import EvalutionTableSec1 from './EvalutionTableSec1'
 import EvalutionTableSec2 from './EvalutionTableSec2'
 import EvalutionTableSec3 from './EvalutionTableSec3'
+import EvalutionTableSec4 from './EvalutionTableSec4'
+import EvalutionTableSec4_b from './EvalutionTableSec4_b'
+import EvalutionTableSec5 from './EvalutionTableSec5'
+import EvalutionTableSec5_b from './EvalutionTableSec5_b'
+import EvalutionTableSec5_c from './EvalutionTableSec5_c'
+
 
 import EvalutionTableFooter from './EvalutionTableFooter'
 
@@ -25,6 +31,11 @@ export default function EvalutionTable() {
                 <EvalutionTableSec1 />
                 <EvalutionTableSec2 />
                 <EvalutionTableSec3 />
+                <EvalutionTableSec4 />
+                <EvalutionTableSec4_b/>
+                <EvalutionTableSec5/>
+                <EvalutionTableSec5_b/>
+                <EvalutionTableSec5_c/>
             </main>
 
 
