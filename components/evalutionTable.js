@@ -1,18 +1,16 @@
 import React from 'react'
 import Head from 'next/head'
-import EvalutionTableHeader from './EvalutionTableHeader'
-
-import EvalutionTableSec1 from './EvalutionTableSec1'
-import EvalutionTableSec2 from './EvalutionTableSec2'
-import EvalutionTableSec3 from './EvalutionTableSec3'
-import EvalutionTableSec4 from './EvalutionTableSec4'
-import EvalutionTableSec4_b from './EvalutionTableSec4_b'
-import EvalutionTableSec5 from './EvalutionTableSec5'
-import EvalutionTableSec5_b from './EvalutionTableSec5_b'
-import EvalutionTableSec5_c from './EvalutionTableSec5_c'
-
-
-import EvalutionTableFooter from './EvalutionTableFooter'
+import EvalutionTableHeader from './evaluationForm/EvalutionTableHeader'
+import EvalutionTableSec1 from './evaluationForm/EvalutionTableSec1'
+import EvalutionTableSec2 from './evaluationForm/EvalutionTableSec2'
+import EvalutionTableSec3 from './evaluationForm/EvalutionTableSec3'
+import EvalutionTableSec4 from './evaluationForm/EvalutionTableSec4'
+import EvalutionTableSec4_b from './evaluationForm/EvalutionTableSec4_b'
+import EvalutionTableSec5 from './evaluationForm/EvalutionTableSec5'
+import EvalutionTableSec5_b from './evaluationForm/EvalutionTableSec5_b'
+import EvalutionTableSec5_c from './evaluationForm/EvalutionTableSec5_c'
+import EvalutionTableSec6 from './evaluationForm/EvalutionTableSec6'
+import EvalutionTableFooter from './evaluationForm/EvalutionTableFooter'
 
 
 export default function EvalutionTable() {
@@ -36,6 +34,7 @@ export default function EvalutionTable() {
                 <EvalutionTableSec5/>
                 <EvalutionTableSec5_b/>
                 <EvalutionTableSec5_c/>
+                <EvalutionTableSec6/>
             </main>
 
 
