@@ -22,12 +22,15 @@ export function useAuth() {
       resetNewRow,
       newRow: false,
     });
-  
+    
+    function checkTokens() {
+      return 5
+    }
     async function login(username, password) {
       const response = await axios.post(tokenUrl, { username, password });
-  
+      
       const decodedAccess = jwt.decode(response.data.access);
-  
+      console.log(decodedAccess)
       const newState = {
         tokens: response.data,
         user: {
