@@ -1,7 +1,17 @@
 import React from "react";
-
+import TeacherRow from "./TeacherRow";
 export default function ManagerDashboard() {
-    const teachers = ["Albert Einstein", "Nikola Tesla", "Heisnberg", "Isaac Newton", "Ramanojan", "Alan Turing", "Robert Boil", "John Doe", "someone else"]
+  const teachers = [
+    "Albert Einstein",
+    "Nikola Tesla",
+    "Heisnberg",
+    "Isaac Newton",
+    "Ramanojan",
+    "Alan Turing",
+    "Robert Boil",
+    "John Doe",
+    "someone else",
+  ];
   return (
     <div className="w-full p-8">
       <div className="flex justify-around w-full">
@@ -42,61 +52,9 @@ export default function ManagerDashboard() {
         <div className="flex justify-between m-12 mt-4 overflow-x-hidden overflow-y-scroll w-fit h-96">
           <table class="w-96">
             <tbody class="bg-white">
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  John Cena
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Majed AlSwaeer
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Odeh Abuzaid
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Rnad Alkhlafat
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Ronaldinho
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Elon Musk
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Isaac Newton
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Alber Einstein
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Nikola Tesla
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Heisnberg
-                </td>
-              </tr>
-              <tr class="text-gray-700">
-                <td class="px-4 py-3 text-ms font-semibold border">
-                  Dario Thornhill
-                </td>
-              </tr>
+              {teachers.map((itm, i) => (
+                <TeacherRow name={itm} key={i} />
+              ))}
             </tbody>
           </table>
         </div>
