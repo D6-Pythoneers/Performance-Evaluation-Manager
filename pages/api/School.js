@@ -1,3 +1,4 @@
+// 201 Basics :D
 import axios from 'axios'
 import { useAuth } from '../../contexts/auth'
 export default class School {
@@ -15,8 +16,7 @@ export default class School {
     this.getAssesments()
     this.getGoals()
   }
-  
-  // Methods
+
   getShool() {
     let jwt = this.tokens.access
     let config = {
