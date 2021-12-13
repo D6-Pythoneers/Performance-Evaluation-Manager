@@ -31,6 +31,7 @@ export default function LoginForm() {
               placeholder="Your ID"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              data-cy="login-id"
             />
           </div>
           <div className="mb-6">
@@ -47,12 +48,14 @@ export default function LoginForm() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              data-cy="login-password"
             />
           </div>
           <div className="flex items-center justify-between">
             <button
               className="px-4 py-2 m-auto font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="submit"
+              data-cy="login-submit"
             >
               Sign In
             </button>
