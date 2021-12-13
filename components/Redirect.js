@@ -3,7 +3,6 @@ import { useAuth } from '../contexts/auth'
 import ManagerDashboard from './ManagerDashboard/Index'
 import Index from './TeacherDashboard/Index'
 import School from '../pages/api/School'
-
 export default function Redirect() {
   const { user } = useAuth()
   const school = new School(user)
