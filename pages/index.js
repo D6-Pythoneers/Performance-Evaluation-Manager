@@ -2,11 +2,17 @@ import Pagination from '../components/TeacherDashboard/Pagination'
 import Header from '../components/Header'
 import LoginForm from '../components/LoginForm'
 import { useAuth } from '../contexts/auth'
-
+import { useEffect } from 'react'
 import Redirect from '../components/Redirect'
 import Footer from '../components/Footer'
 export default function Home() {
   const { user } = useAuth()
+  // useEffect(() => {
+  //   if (user) {
+  //     window.location.href = "http://localhost:3000/"
+  //   }
+  // })
+  
   return (
     <>
       {user ? (

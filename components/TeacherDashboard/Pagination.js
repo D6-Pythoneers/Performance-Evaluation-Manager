@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from 'next/link'
 import { useAuth } from "../../contexts/auth";
 export default function Pagination() {
   const [clicked, setClicked] = useState("dashboard")
@@ -9,10 +10,11 @@ export default function Pagination() {
       <div className="flex h-full p-4 my-0 bg-gray-800 w-72 ">
         <ul className="flex flex-col justify-between w-full">
           <div>
+            <Link href="/dashboard">
             <li className="my-px">
               <a
                 href="#"
-                className={`flex flex-row items-center h-12 px-4  rounded-lg ${clicked == "dashboard" ? "text-gray-600 bg-gray-100" :"text-gray-500" }`}
+                className="flex flex-row items-center h-12 px-4 text-gray-500 rounded-lg hover:bg-gray-700"
               >
                 <span className="flex items-center justify-center text-lg text-gray-500">
                   <svg
@@ -31,6 +33,8 @@ export default function Pagination() {
                
               </a>
             </li>
+            </Link>
+            <Link href="/profile">
             <li className="my-px">
               <a
                 href="#"
@@ -52,6 +56,7 @@ export default function Pagination() {
                 <span className="ml-3">Profile</span>
               </a>
             </li>
+            </Link>
             <li className="my-px">
               <a
                 href="#"
