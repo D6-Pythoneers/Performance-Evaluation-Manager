@@ -6,7 +6,9 @@ export default function Pagination() {
   
   return (
     <div className="flex items-center my-0 bg-gray-100 " >
+      
       <div className="flex h-full p-4 my-0 bg-gray-800 w-72 ">
+        
         <ul className="flex flex-col justify-between w-full">
           <div>
             <Link href="/dashboard">

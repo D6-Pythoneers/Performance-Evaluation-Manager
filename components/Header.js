@@ -10,7 +10,7 @@ export default function Header({user}) {
           <Link href="/">
             <div className="flex items-center flex-shrink-0">
               
-              <h1 className="text-4xl text-gray-100 cursor-pointer">PEM</h1>
+              <img src="https://www.pemnet.com/wp-content/uploads/2015/12/cropped-PEM-icon.png" className="text-4xl text-gray-100 mt-2 absolute mr-96 cursor-pointer" height='50px' width='60px'/>
             </div>
             </Link>
           </div>
