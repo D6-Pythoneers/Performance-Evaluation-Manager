@@ -2,7 +2,8 @@ import React from 'react'
 import useResouce from '../../hooks/useResource'
 import { createContext, useContext, useState, useEffect } from "react";
 import { render } from 'react-dom';
-export default function ManagerDashboard ({ resources }) {
+import {Link} from "next/link"
+export default function ManagerDashboard({ resources }) {
   console.log(resources)
   return (
     resources != null ?
@@ -53,10 +54,29 @@ export default function ManagerDashboard ({ resources }) {
         {/*  */}
         <div className='flex flex-col w-2/5 mt-12 '>
           <h2 className='ml-12 text-3xl'>Teachers</h2>
-          <div className='flex justify-between m-12 mt-4 w-fit h-96'>
-            {resources.schoolTeachers.map((teacher, index) => {
-              return (<div key={index}>{teacher.name}</div>)
-            })}
+          <div id="container" class="w-4/5 mx-auto ml-0">
+            <div className="grid w-full grid-cols-3 gap-3 m-12 ml-0 ">
+              {resources
+                ? resources.schoolTeachers.map((teacher) => (
+                  <div class="bg-gray-800 px-6 py-8 rounded-lg shadow-lg text-center m-16 mt-0 mx-24 w-56 border border-gray">
+                    <div class="mb-3">
+                      <img
+                        class="w-auto mx-auto rounded-full"
+                        src="https://thumbs.dreamstime.com/z/vector-illustration-isolated-white-background-user-profile-avatar-black-line-icon-user-profile-avatar-black-line-icon-121102131.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h2 class="text-xl font-medium text-white">{teacher.name}</h2>
+                    <span class="text-white block mb-5">{teacher.role}</span>
+
+                    <a href="/evaluation" class="px-4 py-2 bg-blue-800 text-white rounded-full"
+                    >Evaluate</a>
+
+                  </div>
+                ))
+                : false}
+            </div>
+
           </div>
         </div>
       </div>) : null
