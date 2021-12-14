@@ -6,25 +6,38 @@ import Footer from "../components/Footer";
 import { useAuth } from "../contexts/auth";
 import TeacherDashboard from "../components/TeacherDashboard/TeacherDashboard";
 import ManagerDashboard from "../components/ManagerDashboard/ManagerDashboard";
-export default function ManagerDB() {
+import Loading from "../components/utils/Loading";
+export default function Dashboard() {
   const { user } = useAuth();
-  const { resources } = useResouce();
-  console.log(resources);
+  const { resources, loading } = useResouce(user)
+
   return (
     <div>
       <Header user={user} />
-      <div className="flex w-full ">
-        <Pagination />
-        <div className="w-full bg-gray-100">
-          {user ? (
-            user.role == "teacher" ? (
-              <TeacherDashboard />
+      {!loading ? (
+        <div className="flex w-full ">
+          <Pagination />
+          <div className="flex w-full h-full">
+            {user.role == "teacher" ? (
+              loading ? (
+                <Loading />
+              ) : (
+                <TeacherDashboard resources={resources} />
+              )
             ) : user.role == "manager" ? (
-              <ManagerDashboard />
-            ) : undefined
-          ) : undefined}
+              loading ? (
+                <Loading />
+              ) : (
+                <ManagerDashboard resources={resources} />
+              )
+            ) : (
+              false
+            )}
+          </div>
         </div>
-      </div>
+      ) : (
+        <Loading />
+      )}
       <Footer />
     </div>
   );
