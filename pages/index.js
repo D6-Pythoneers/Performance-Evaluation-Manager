@@ -5,14 +5,8 @@ import { useAuth } from '../contexts/auth'
 import { useEffect } from 'react'
 import Redirect from '../components/Redirect'
 import Footer from '../components/Footer'
-export default function Home() {
+export default function Home () {
   const { user } = useAuth()
-  // useEffect(() => {
-  //   if (user) {
-  //     window.location.href = "http://localhost:3000/"
-  //   }
-  // })
-  
   return (
     <>
       {user ? (
@@ -21,7 +15,7 @@ export default function Home() {
           <div className='flex w-full '>
             <Pagination />
             <div className='w-full bg-gray-100'>
-              <Redirect user={user} />
+              <Redirect user={user}/>
             </div>
           </div>
           <Footer />
@@ -32,15 +26,3 @@ export default function Home() {
     </>
   )
 }
-// <div className="min-h-screen bg-gray-100">
-// <Header />
-// <main className="flex">
-//   <SideBar />
-//   <div className="flex w-full ">
-//     <UserDetails />
-//     <UserContactInformationForm/>
-//   </div>
-// </main>
-
-// <Footer />
-// </div>
