@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useAuth } from "../../contexts/auth";
 export default function Pagination() {
   const [clicked, setClicked] = useState("dashboard")
@@ -18,9 +17,9 @@ export default function Pagination() {
                 <span className="flex items-center justify-center text-lg text-gray-500">
                   <svg
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     className="w-6 h-6"
@@ -40,9 +39,9 @@ export default function Pagination() {
                 <span className="flex items-center justify-center text-lg text-gray-500">
                   <svg
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     className="w-6 h-6"
@@ -61,9 +60,9 @@ export default function Pagination() {
                 <span className="flex items-center justify-center text-lg text-gray-500">
                   <svg
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     className="w-6 h-6"
@@ -84,9 +83,9 @@ export default function Pagination() {
               <span className="flex items-center justify-center text-lg text-red-400">
                 <svg
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   className="w-6 h-6"

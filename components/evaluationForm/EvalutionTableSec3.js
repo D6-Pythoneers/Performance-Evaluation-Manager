@@ -85,7 +85,7 @@ export default function EvalutionTableSec3() {
                         </tr>
 
                     </tbody>
-                    {/* <button class="bg-blue-500 hover:bg-blue-700 text-white relative  left-2/4 font-bold item-left py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    {/* <button className="bg-blue-500 hover:bg-blue-700 text-white relative  left-2/4 font-bold item-left py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                         Submit Form
                     </button> */}
                 </table>
