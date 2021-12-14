@@ -1,11 +1,10 @@
-import React from "react";
 import TeacherRow from "./TeacherRow";
 export default function ManagerDashboard({school}) {
   const {schoolTeachers,academic_year} = school
   // console.log(schoolTeachers.length)
   return (
-    <div className="w-full p-8">
-      <div className="flex justify-around w-full">
+    <div data-cy="manager-dashboard" className="w-full p-8">
+      <div data-cy="manager-dashboard-cards" className="flex justify-around w-full">
         <div className="flex p-4 bg-white rounded-xl">
           <img alt= "Academic Year" src="https://img.icons8.com/color/48/000000/calendar--v1.png" />
           <div class="mx-5 bg-white min-w-max">
@@ -40,7 +39,7 @@ export default function ManagerDashboard({school}) {
       <div className="flex flex-col w-2/5 mt-12 ">
         <h2 className="ml-12 text-3xl">Teachers</h2>
 
-        <div className="flex justify-between m-12 mt-4 overflow-x-hidden overflow-y-scroll w-fit h-96">
+        <div data-cy="manager-dashboard-teachers-div" className="flex justify-between m-12 mt-4 overflow-x-hidden overflow-y-scroll w-fit h-96">
           <table class="w-96">
             <tbody class="bg-white">
               {schoolTeachers.map((itm, i) => (

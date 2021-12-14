@@ -4,7 +4,7 @@ import TeacherDetails from "./TeacherDetails";
 export default function TeacherProfile() {
 
   return (
-    <div className="flex w-full ">
+    <div data-cy="teacher-profile" className="flex w-full ">
         <TeacherDetails />
         <TeacherContactInformationForm />
     </div>

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "cypress-react-selector": "^2.3.13",
     "jsonwebtoken": "^8.5.1",
     "next": "latest",
     "react": "^17.0.2",
