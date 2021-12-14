@@ -1,19 +1,15 @@
 import React from 'react'
-import { useAuth } from '../contexts/auth'
+// import Index from './TeacherDashboard/Index'
+import TeacherProfile from '../components/TeacherDashboard/TeacherProfile'
 import ManagerDashboard from './ManagerDashboard/ManagerDashboard'
-import Index from './TeacherDashboard/Index'
-import School from '../pages/api/School'
-export default function Redirect() {
-  const { user } = useAuth()
-  const school = new School(user)
-  console.log(school)
-  
+
+export default function Redirect({user}) {
   return (
     <div className='flex w-full h-full'>
       {user.role == 'teacher' ? (
-        <Index />
+        <TeacherProfile />
       ) : user.role == 'manager' ? (
-        <ManagerDashboard school={school} />
+        <ManagerDashboard />
       ) : (
         false
       )}
