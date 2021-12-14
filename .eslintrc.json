@@ -1,67 +1,24 @@
 {
-    "extends": [
-        "react-app",
-        "react-app/jest"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 7,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "impliedStrict": true
-        }
-    },
     "env": {
-        "browser": true,
-        "es6": true
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
     },
     "rules": {
-        "eqeqeq": [
+        "quote-props": [
             "error",
-            "always"
-        ],
-        "no-console": "off",
-        "no-undefined": "off",
-        "indent": [
-            "error",
-            2
-        ],
-        "quotes": [
-            "warn",
-            "single"
-        ],
-        "no-multi-spaces": [
-            "warn",
-            {
-                "exceptions": {
-                    "VariableDeclarator": true
-                }
-            }
-        ],
-        "no-trailing-spaces": "warn",
-        "new-cap": "warn",
-        "no-redeclare": [
-            "error",
-            {
-                "builtinGlobals": true
-            }
-        ],
-        "semi": [
-            2,
-            "always"
-        ],
-        "eol-last": "error",
-        "no-var": "error",
-        "camelcase": 1,
-        "space-in-parens": [
-            "error",
-            "always"
-        ],
-        "space-infix-ops": [
-            "error",
-            {
-                "int32Hint": false
-            }
+            "consistent-as-needed"
         ]
-        // "strict": [2, "global"]
     }
 }
