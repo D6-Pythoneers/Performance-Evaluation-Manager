@@ -48,22 +48,22 @@ export default function ManagerDashboard({ resources }) {
         {/*  */}
         <div className='flex flex-col w-2/5 mt-12 '>
           <h2 className='ml-12 text-3xl'>Teachers</h2>
-          <div id="container" class="w-4/5 mx-auto ml-0">
+          <div id="container" className="w-4/5 mx-auto ml-0">
             <div className="grid w-full grid-cols-3 gap-3 m-12 ml-0 ">
               {resources
                 ? resources.schoolTeachers.map((teacher) => (
-                  <div class="bg-gray-800 px-6 py-8 rounded-lg shadow-lg text-center m-16 mt-0 mx-24 w-56 border border-gray">
-                    <div class="mb-3">
+                  <div className="w-56 px-6 py-8 m-16 mx-24 mt-0 text-center bg-gray-800 border rounded-lg shadow-lg border-gray">
+                    <div className="mb-3">
                       <img
-                        class="w-auto mx-auto rounded-full"
+                        className="w-auto mx-auto rounded-full"
                         src="https://thumbs.dreamstime.com/z/vector-illustration-isolated-white-background-user-profile-avatar-black-line-icon-user-profile-avatar-black-line-icon-121102131.jpg"
                         alt=""
                       />
                     </div>
-                    <h2 class="text-xl font-medium text-white">{teacher.name}</h2>
-                    <span class="text-white block mb-5">{teacher.role}</span>
+                    <h2 className="text-xl font-medium text-white">{teacher.name}</h2>
+                    <span className="block mb-5 text-white">{teacher.role}</span>
 
-                    <a href="/evaluation" class="px-4 py-2 bg-blue-800 text-white rounded-full"
+                    <a href="/evaluation" className="px-4 py-2 text-white bg-blue-800 rounded-full"
                     >Evaluate</a>
 
                   </div>
