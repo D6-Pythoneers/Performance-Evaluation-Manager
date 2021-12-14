@@ -77,6 +77,7 @@ export default function Pagination() {
           </div>
           <li className="my-px">
             <a
+            data-cy="logout-button"
             onClick={() => logout()}
               href="#"
               className="flex flex-row items-center h-12 px-4 text-gray-500 rounded-lg hover:bg-gray-700"
@@ -94,7 +95,7 @@ export default function Pagination() {
                   <path d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
                 </svg>
               </span>
-              <span className="ml-3">Logout</span>
+              <span className="ml-3" >Logout</span>
             </a>
           </li>
         </ul>
