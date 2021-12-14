@@ -5,28 +5,28 @@ export default function TeacherDashboard() {
     <div className="w-full p-8">
       <div className="flex justify-around w-full">
         <div className="flex p-4 bg-white rounded-xl">
-          <img src="https://img.icons8.com/color/48/000000/calendar--v1.png" />
+          <img alt = "Academic Year" src="https://img.icons8.com/color/48/000000/calendar--v1.png" />
           <div class="mx-5 bg-white min-w-max">
             <div class="text-gray-500">Academic Year</div>
             <h4 class="text-2xl font-semibold text-gray-700">2021/2022</h4>
           </div>
         </div>
         <div className="flex gap-4 p-4 bg-white rounded-xl">
-          <img src="https://img.icons8.com/fluency/48/000000/test.png" />
+          <img alt = "Evaluation Phase" src="https://img.icons8.com/fluency/48/000000/test.png" />
           <div class="mx-5 bg-white min-w-max">
             <div class="text-gray-500">Evaluation Phase</div>
             <h4 class="text-2xl font-semibold text-gray-700">First</h4>
           </div>
         </div>
         <div className="flex p-4 bg-white rounded-xl">
-          <img src="https://img.icons8.com/color/48/000000/data-pending.png" />
+          <img alt = "Pending Evaluation" src="https://img.icons8.com/color/48/000000/data-pending.png" />
           <div class="mx-5 bg-white">
             <div class="text-gray-500">Pending Evaluation</div>
             <h4 class="text-2xl font-semibold text-gray-700"></h4>
           </div>
         </div>
         <div className="flex p-4 bg-white rounded-xl">
-          <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-chart-data-analytics-icongeek26-linear-colour-icongeek26-1.png" />
+          <img alt = "Last Score" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-chart-data-analytics-icongeek26-linear-colour-icongeek26-1.png" />
           <div class="mx-5 bg-white">
             <div class="text-gray-500">Last Score</div>
             <h4 class="text-2xl font-semibold text-gray-700">85</h4>
