@@ -1,19 +1,12 @@
-describe("login", () => {
+describe("login as a teacher", () => {
+  it("logs in registered teacher", () => {
+    cy.login("renad", "Pass@123");
+  });
+});
 
-    
-    it('logs in registered user', () => {
-        cy.login()
-    })
-})
-
-describe("logout", () => {
-    beforeEach(() => {
-        cy.login()
-    })
-    it('logs out logged in user', () => {
-        cy.get('[data-cy=logout-button]').click()
-        cy.get('form')
-    })
-
-})
+describe("login as a manager", () => {
+    it("logs in registered manager", () => {
+      cy.login("majed", "Pass@123");
+    });
+  });
 

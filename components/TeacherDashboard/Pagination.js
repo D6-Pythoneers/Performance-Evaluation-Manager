@@ -9,8 +9,8 @@ export default function Pagination() {
       <div className="flex h-full p-4 my-0 bg-gray-800 w-72 ">
         <ul className="flex flex-col justify-between w-full">
           <div>
-            <Link href="/dashboard">
-            <li className="my-px">
+            <Link data-cy="move-to-dashboard" href="/dashboard">
+            <li  className="my-px">
               <a
                 href="#"
                 className="flex flex-row items-center h-12 px-4 text-gray-500 rounded-lg hover:bg-gray-700"
@@ -58,8 +58,8 @@ export default function Pagination() {
             </Link>
 
           </div>
-          <Link href="/">
-          <li className="my-px" onClick={() => logout()}>
+          <Link href="/" >
+          <li data-cy="logout-button" className="my-px" onClick={() => logout()}>
             <a
             
               href="#"
