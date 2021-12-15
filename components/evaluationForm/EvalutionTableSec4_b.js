@@ -140,15 +140,10 @@ export default function EvalutionTableSec4_b() {
                             <td className="border border-b border-black"></td>
                             <td className="border border-b border-black">Mark from 10(sum*10)</td>
                             <td className="border border-b border-black"></td>
-
                         </tr>
-
-
                     </tbody>
-
                 </table>
             </form>
-
         </div>
     )
 }
