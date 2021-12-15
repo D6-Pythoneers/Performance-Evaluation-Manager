@@ -143,6 +143,9 @@ export default function EvalutionTableSec4_b() {
                         </tr>
                     </tbody>
                 </table>
+                <button className="float-right px-4 py-2 mt-3 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 left-2/4 item-left focus:outline-none focus:shadow-outline" type="submit">
+                Send
+            </button>
             </form>
         </div>
     )

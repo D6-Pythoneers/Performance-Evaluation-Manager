@@ -94,7 +94,7 @@ export default function EvalutionTableSec6() {
                             </td>
                             <td className="border border-b border-black">
                                 <tr><p className="w-full mb-10 " name="" >Preparing a quarterly/annual plan based on the analysis of the academic content.</p></tr>
-                                <tr><p className="w-full mb-10 " name="" >Preparing the daily plan and its worksheets and annexes (the variety of outputs and their comprehensiveness are appropriate, teaching and assessment strategies, and self-reflection..etc.</p></tr>
+                                <tr><p className="w-full mb-10 " name="" >Preparing the daily plan and its worksheets and annexes {"("}the variety of outputs and their comprehensiveness are appropriate, teaching and assessment strategies, and self-reflection..etc.</p></tr>
                                 <tr><p className="w-full mb-10 " name="" >Remedial and enrichment plans and activities for students</p></tr>
                                 <tr><p className="w-full mb-10 " name="" >Follow-up of classroom activities, employing laboratories, various learning resources, and documenting achievement in appropriate records</p></tr>
                                 <tr><p className="w-full mb-10 " name="" >Building and executing tests based on the specification table and good test specificationss</p></tr>

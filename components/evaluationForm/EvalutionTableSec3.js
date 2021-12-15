@@ -2,13 +2,28 @@ import React from 'react'
 import {useState} from "react"
 export default function EvalutionTableSec3() {
     const [showMe, setShowMe] = useState(false);
+    const [goals,setGoals] = useState({});
+
+    function submitHandler(e){
+        e.preventDefault();
+       const  myForm=document.getElementById('myForm');
+        
+        const data={
+            "goal":[e.target.goal1.value,e.target.goal2.value,e.target.goal3.value,e.target.goal4.value],
+            "goal_result":[e.target.goal1_result.value,e.target.goal2_result.value,e.target.goal3_result.value,e.target.goal4_result.value],
+            "max_score":[e.target.goal1_max.value,e.target.goal2_max.value,e.target.goal3_max.value,e.target.goal4_max.value],
+            "score":[e.target.goal1_min.value,e.target.goal2_min.value,e.target.goal3_min.value,e.target.goal4_min.value],
+        }
+    setGoals(x=>[{...x,data}])
+    myForm.reset()
+    }
     function toggle(){
     setShowMe(!showMe);
 }
     return (
         <div>
             <h2 onClick={toggle} className="pb-4 mb-4 font-bold text-left bg-gray-200">Part Three: The goals that the teacher calls them to achieve and allocates to them (20%) (to be selected from the teacher’s professional growth plan and the school development plan in agreement between the school principal and the teacher)<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2"/></h2>
-            <form style={{display: showMe?"inline-table":"none"}} className="w-full bg-white ">
+            <form id="myForm" style={{display: showMe?"inline-table":"none"}} className="w-full bg-white " onSubmit={submitHandler}>
                 <table>
                     <thead className="w-full text-white bg-gray-500 ">
                         <tr>
@@ -97,7 +112,10 @@ export default function EvalutionTableSec3() {
                         Submit Form
                     </button> */}
                 </table>
-            </form>
+            
+                <button className="float-right px-4 py-2 mt-3 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 left-2/4 item-left focus:outline-none focus:shadow-outline" type="submit">
+                Send
+            </button></form>
 
         </div>
     )
