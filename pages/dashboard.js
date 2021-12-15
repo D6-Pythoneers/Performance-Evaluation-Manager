@@ -7,12 +7,12 @@ import { useAuth } from "../contexts/auth";
 import TeacherDashboard from "../components/TeacherDashboard/TeacherDashboard";
 import ManagerDashboard from "../components/ManagerDashboard/ManagerDashboard";
 import Loading from "../components/utils/Loading";
-export default function Dashboard() {
+export default function Dashboard () {
   const { user } = useAuth();
   const { resources, loading } = useResouce(user)
 
   return (
-    <div>
+    (user ? <div>
       <Header user={user} />
       {!loading ? (
         <div className="flex w-full ">
@@ -39,6 +39,7 @@ export default function Dashboard() {
         <Loading />
       )}
       <Footer />
-    </div>
+    </div> : null)
+
   );
 }

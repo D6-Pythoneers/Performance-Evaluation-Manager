@@ -22,15 +22,15 @@ export default function TeacherDashboard({resources}) {
         <div className="flex p-4 bg-white rounded-xl">
           <img alt = "Pending Evaluation" src="https://img.icons8.com/color/48/000000/data-pending.png" />
           <div className="mx-5 bg-white">
-            <div className="text-gray-500">Pending Evaluation</div>
-            <h4 className="text-2xl font-semibold text-gray-700"></h4>
+            <div className="text-gray-500">Evaluation</div>
+            <h4 className="text-2xl font-semibold text-gray-700">Pending </h4>
           </div>
         </div>
         <div className="flex p-4 bg-white rounded-xl">
           <img alt = "Last Score" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-chart-data-analytics-icongeek26-linear-colour-icongeek26-1.png" />
           <div className="mx-5 bg-white">
             <div className="text-gray-500">Last Score</div>
-            <h4 className="text-2xl font-semibold text-gray-700">85</h4>
+            <h4 className="text-2xl font-semibold text-gray-700">90</h4>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function TeacherDashboard({resources}) {
               <td className="px-4 py-3 text-xs border">
                 <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
                   {" "}
-                  95{" "}
+                  pending{" "}
                 </span>
               </td>
             </tr>

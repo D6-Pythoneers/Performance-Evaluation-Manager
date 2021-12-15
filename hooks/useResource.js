@@ -6,7 +6,11 @@ export const apiUrl = process.env.NEXT_PUBLIC_RESOURCE_URL
 import School from '../pages/api/School'
 export default function useResource (user) {
   // const { user } = useAuth()
-  const tokens = JSON.parse(window.localStorage.getItem('tokens'))
+  let tokens
+  if (typeof window !== "undefined") {
+    tokens = JSON.parse(window.localStorage.getItem('tokens'))
+  }
+
   const { data, error, mutate } = useSWR([apiUrl, tokens], fetchResource)
 
   async function fetchResource (url) {
@@ -87,7 +91,7 @@ export default function useResource (user) {
           eva['assesments'] = assesments
         })
       }).catch(err => console.log(err))
-      
+
       console.log('ress ->>>>', school)
       return school
     } catch (error) {
