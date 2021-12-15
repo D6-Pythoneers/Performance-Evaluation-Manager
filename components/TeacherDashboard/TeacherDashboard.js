@@ -3,7 +3,7 @@ import React from "react";
 export default function TeacherDashboard({resources}) {
   console.log(resources);
   return (
-    <div className="w-full p-8" style={{"minHeight":"87vh"}}>
+    <div className="w-full p-8" style={{"minHeight":"89vh"}}>
       <div className="flex justify-around w-full">
         <div className="flex p-4 bg-white rounded-xl">
           <img alt = "Academic Year" src="https://img.icons8.com/color/48/000000/calendar--v1.png" />
