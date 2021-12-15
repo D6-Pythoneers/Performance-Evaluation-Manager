@@ -2,6 +2,7 @@ import react from "react";
 import { createContext, useContext, useState, useEffect } from "react";
 import jwt from "jsonwebtoken";
 import axios from "axios";
+import Swal from 'sweetalert2'
 const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 const tokenUrl = baseUrl + "/api/token/";
 const AuthContext = createContext();
@@ -54,31 +55,44 @@ export function AuthProvider (props) {
   }, []);
 
   async function login (username, password) {
-    const response = await axios.post(tokenUrl, { username, password });
-    console.log(response.data)
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem("tokens", JSON.stringify(response.data));
+
+    try {
+      const response = await axios.post(tokenUrl, { username, password });
+      console.log(response.data)
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem("tokens", JSON.stringify(response.data));
+      }
+
+      const decodedAccess = jwt.decode(response.data.access);
+
+      const newState = {
+        tokens: response.data,
+        user: {
+          username: decodedAccess.username,
+          email: decodedAccess.email,
+          id: decodedAccess.user_id,
+          name: decodedAccess.name,
+          role: decodedAccess.role,
+          sid: decodedAccess.sid,
+          nid: decodedAccess.nid,
+          eid: decodedAccess.eid,
+          qualification: decodedAccess.qualification,
+          directorate: decodedAccess.directorate,
+        },
+      };
+
+      setState((prevState) => ({ ...prevState, ...newState }));
+
+    } catch (error) {
+      Swal.fire({
+        title: 'Authintication error!',
+        text: 'password or username invalid!',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      })
     }
-    
-    const decodedAccess = jwt.decode(response.data.access);
 
-    const newState = {
-      tokens: response.data,
-      user: {
-        username: decodedAccess.username,
-        email: decodedAccess.email,
-        id: decodedAccess.user_id,
-        name: decodedAccess.name,
-        role: decodedAccess.role,
-        sid: decodedAccess.sid,
-        nid: decodedAccess.nid,
-        eid: decodedAccess.eid,
-        qualification: decodedAccess.qualification,
-        directorate: decodedAccess.directorate,
-      },
-    };
 
-    setState((prevState) => ({ ...prevState, ...newState }));
   }
 
   function logout () {
