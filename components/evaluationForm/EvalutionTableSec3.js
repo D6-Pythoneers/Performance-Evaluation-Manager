@@ -24,68 +24,72 @@ export default function EvalutionTableSec3() {
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
                             <label className="px-4 py-3 text-sm font-semibold text-center ">1</label></td>
                             <td className="w-1/3 px-4 py-3 text-center border border-black ">
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal1" />
                             </td>
                             <td className="w-1/3 px-4 py-3 text-center border border-black ">
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal1_result" />
                             </td>
                             <td className="w-1/3 px-4 py-3 text-center border border-black ">
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal1_max" />
                             </td>
                             <td className="w-1/3 px-4 py-3 text-center border border-black ">
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal1_min" />
                             </td>
                         </tr>
                         <tr className="border border-black border-blacklack">
                         <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
                             <label className="px-4 py-3 text-sm font-semibold text-center ">2</label></td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal2" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal2_result" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal2_max" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal2_min" />
                             </td>
                         </tr>
                         <tr className="border border-black border-blacklack">
                         <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
                             <label className="px-4 py-3 text-sm font-semibold text-center ">3</label></td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal3" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal3_result" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal3_max" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal3_min" />
                             </td>
                         </tr>
                         <tr className="border border-black border-blacklack">
                         <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
                             <label className="px-4 py-3 text-sm font-semibold text-center ">4</label></td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal4" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal4_result" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal4_max" />
                             </td>
                             <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
-                                <textarea className="w-full " type="text" placeholder='Typre here..' name="" />
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal4_min" />
                             </td>
                         </tr>
                         <tr className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black">
-                            Totals
+                        <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center border border-black" >
+                            <label className="px-4 py-3 text-sm font-semibold text-center ">Totals</label></td>
+                            <td className="w-1 px-4 py-3 text-xs text-sm font-semibold text-left text-center " >
+                                <textarea className="w-full " type="text" placeholder='Typre here..' id="goal4" />
+                            </td>
                         </tr>
 
                     </tbody>

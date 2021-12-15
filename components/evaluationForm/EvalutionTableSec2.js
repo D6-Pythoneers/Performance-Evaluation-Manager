@@ -10,7 +10,6 @@ export default function EvalutionTableSec2() {
                     <div className='flex flex-col-2'>
                         <h3>Name</h3>
                         <textarea name="name_area" defaultValue="......................" />
-
                     </div>
                     <div className='flex flex-col-2'>
                         <h3>Degree</h3>
