@@ -290,7 +290,7 @@ export default function EvalutionTableSec6() {
             <div className='flex flex-row-1 '>
                 <div className='flex flex-row-1' >
                     <p className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200 rounded-lg">Final Summation out of 100</p>
-                    <textarea className='mt-4 ml-4 ' placeholder='Type here..'></textarea>
+                    <textarea className='mt-4 ml-4 ' id="final_score" placeholder='Type here..'></textarea>
 
                 </div>
             </div>
