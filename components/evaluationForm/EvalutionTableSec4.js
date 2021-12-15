@@ -1,15 +1,15 @@
 import React from 'react'
-import {useState } from "react"
+import { useState } from "react"
 
 export default function EvalutionTableSec4() {
     const [showMe, setShowMe] = useState(false);
-    function toggle(){
-    setShowMe(!showMe);
-}
+    function toggle() {
+        setShowMe(!showMe);
+    }
     return (
         <div>
-            <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Part Four: (A) The assessment elements of knowledge and professional behavior to be filled out by the school principal, and 30% is allocated to them.<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2"/></h2>
-            <form style={{display: showMe?"inline-table":"none"}} className="w-full bg-white ">
+            <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Part Four: (A) The assessment elements of knowledge and professional behavior to be filled out by the school principal, and 30% is allocated to them.<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2" /></h2>
+            <form style={{ display: showMe ? "inline-table" : "none" }} className="w-full bg-white ">
                 <table>
                     <thead className="w-full text-white bg-gray-500 ">
                         <tr>
@@ -41,21 +41,21 @@ export default function EvalutionTableSec4() {
 
                             </td>
                             <td className="border border-b border-black ">
-                                <textarea className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-12 " id="p4a11" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-12 " id="p4a21" placeholder="Type here.."></textarea>
 
 
                             </td>
                             <td className="border border-b border-black ">
-                                <textarea className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-12 " id="p4a12" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-12 " id="p4a22" placeholder="Type here.."></textarea>
 
 
 
                             </td>
                             <td className="border border-b border-black ">
-                                <textarea className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-12 " id="p4a13" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-12 " id="p4a23" placeholder="Type here.."></textarea>
 
 
                             </td>
@@ -85,34 +85,34 @@ export default function EvalutionTableSec4() {
 
                             </td>
                             <td className="border border-b border-black">
-                                <textarea type='textarea' className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
+                                <textarea type='textarea' className="w-full mb-12 " id="p4a31" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a41" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a51" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a61" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a71" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a81" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a91" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a101" placeholder="Type here.."></textarea>
                             </td>
                             <td className="border border-b border-black">
-                                <textarea type='textarea' className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
+                                <textarea type='textarea' className="w-full mb-12 " id="p4a32" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a42" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a52" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a62" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a72" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a82" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a92" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a102" placeholder="Type here.."></textarea>
                             </td>
                             <td className="border border-b border-black">
-                                <textarea type='textarea' className="w-full mb-12 " name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
-                                <textarea className="w-full mb-7" name="" placeholder="Type here.."></textarea>
+                                <textarea type='textarea' className="w-full mb-12 " id="p4a33" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a43" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a53" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a63" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a73" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a83" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a93" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-7" id="p4a103" placeholder="Type here.."></textarea>
                             </td>
                         </tr>
                         <tr className="text-xs text-center bg-blue-300 border border-b border-black">
