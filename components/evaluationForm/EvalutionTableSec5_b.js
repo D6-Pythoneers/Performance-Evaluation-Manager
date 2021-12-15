@@ -8,7 +8,7 @@ export default function EvalutionTableSec5_b() {
     return (
         <div>
             <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Fifth Part(B): Specialized Standards (10 marks .)
-                It is filled out through the specialized part of the educational supervisor’s visit</h2>
+                It is filled out through the specialized part of the educational supervisor’s visit<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2"/></h2>
             <form style={{display: showMe?"inline-table":"none"}} className="w-full bg-white ">
                 <table>
 

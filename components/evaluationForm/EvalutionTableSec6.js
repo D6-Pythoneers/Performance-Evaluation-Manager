@@ -7,7 +7,7 @@ export default function EvalutionTableSec6() {
 }
     return (
         <div>
-            <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Part(6): Evaluation elements for extra-curricular educational performance to be filled out by (the educational supervisor and the school director) and allocated for them (15%)</h2>
+            <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Part(6): Evaluation elements for extra-curricular educational performance to be filled out by (the educational supervisor and the school director) and allocated for them (15%)<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2"/></h2>
             <form style={{display: showMe?"inline-table":"none"}} className="w-full bg-white ">
                 <table>
                     <thead className="w-full text-white bg-gray-500 ">
