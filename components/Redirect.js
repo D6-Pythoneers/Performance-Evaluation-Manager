@@ -3,7 +3,7 @@ import React from 'react'
 import TeacherProfile from '../components/TeacherDashboard/TeacherProfile'
 import ManagerDashboard from './ManagerDashboard/ManagerDashboard'
 
-export default function Redirect({user}) {
+export default function Redirect ({ user }) {
   return (
     <div className='flex w-full h-full'>
       {user.role == 'teacher' ? (

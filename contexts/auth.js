@@ -6,13 +6,13 @@ const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 const tokenUrl = baseUrl + "/api/token/";
 const AuthContext = createContext();
 
-export function useAuth() {
+export function useAuth () {
   const auth = useContext(AuthContext);
   if (!auth) throw new Error("You forgot AuthProvider!");
   return auth;
 }
 
-export function AuthProvider(props) {
+export function AuthProvider (props) {
   const [state, setState] = useState({
     tokens: null,
     user: null,
@@ -23,7 +23,12 @@ export function AuthProvider(props) {
     newRow: false,
   });
   useEffect(() => {
-    const tokens = JSON.parse(window.localStorage.getItem("tokens"));
+    let tokens;
+    // client side 
+    if (typeof window !== "undefined") {
+      tokens = JSON.parse(window.localStorage.getItem("tokens"));
+    }
+
     console.log(tokens)
     if (tokens) {
       const decodedAccess = jwt.decode(tokens.access);
@@ -48,10 +53,13 @@ export function AuthProvider(props) {
     }
   }, []);
 
-  async function login(username, password) {
+  async function login (username, password) {
     const response = await axios.post(tokenUrl, { username, password });
     console.log(response.data)
-    window.localStorage.setItem("tokens", JSON.stringify(response.data));
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("tokens", JSON.stringify(response.data));
+    }
+    
     const decodedAccess = jwt.decode(response.data.access);
 
     const newState = {
@@ -73,7 +81,7 @@ export function AuthProvider(props) {
     setState((prevState) => ({ ...prevState, ...newState }));
   }
 
-  function logout() {
+  function logout () {
     window.localStorage.clear();
     const newState = {
       tokens: null,
@@ -82,13 +90,13 @@ export function AuthProvider(props) {
     setState((prevState) => ({ ...prevState, ...newState }));
   }
 
-  function addRow() {
+  function addRow () {
     const newState = {
       newRow: true,
     };
     setState((prevState) => ({ ...prevState, ...newState }));
   }
-  function resetNewRow() {
+  function resetNewRow () {
     const newState = {
       newRow: false,
     };

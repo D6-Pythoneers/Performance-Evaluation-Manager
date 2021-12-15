@@ -1,24 +1,66 @@
 {
-    "env": {
-        "commonjs": true,
-        "es6": true,
-        "node": true,
-        "mocha": true
-    },
     "extends": [
-        "standard"
+        "next-app"
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true
     },
     "rules": {
-        "quote-props": [
+        "eqeqeq": [
             "error",
-            "consistent-as-needed"
+            "always"
+        ],
+        "no-console": "off",
+        "no-undefined": "off",
+        "indent": [
+            "error",
+            2
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "no-multi-spaces": [
+            "warn",
+            {
+                "exceptions": {
+                    "VariableDeclarator": true
+                }
+            }
+        ],
+        "no-trailing-spaces": "warn",
+        "new-cap": "warn",
+        "no-redeclare": [
+            "error",
+            {
+                "builtinGlobals": true
+            }
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "eol-last": "error",
+        "no-var": "error",
+        "camelcase": 1,
+        "space-in-parens": [
+            "error",
+            "always"
+        ],
+        "space-infix-ops": [
+            "error",
+            {
+                "int32Hint": false
+            }
         ]
+        // "strict": [2, "global"]
     }
 }
