@@ -5,11 +5,14 @@
     "build": "next build",
     "start": "next start",
     "cypress": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "test": "mocha",
+    "coverage": "nyc npm run test"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "axios": "^0.24.0",
+    "babel-plugin-istanbul": "^6.1.1",
     "cypress-react-selector": "^2.3.13",
     "jsonwebtoken": "^8.5.1",
     "next": "latest",

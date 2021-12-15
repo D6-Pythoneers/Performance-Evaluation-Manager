@@ -1,3 +1,3 @@
 import './commands'
-import 'cypress-istanbul/support'
+import '@cypress/code-coverage/support';
 

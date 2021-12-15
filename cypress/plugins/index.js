@@ -17,5 +17,6 @@
  */
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
-  on('task', require('cypress-istanbul/task'))
-}
+  require('@cypress/code-coverage/task')(on, config);
+  return config;
+};
