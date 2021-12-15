@@ -60,30 +60,7 @@ export default function Pagination() {
             </Link>
 
           </div>
-          <Link href="/">
-          <li className="my-px" onClick={() => logout()}>
-            <a
-            
-              href="#"
-              className="flex flex-row items-center h-12 px-4 text-gray-500 rounded-lg hover:bg-gray-700"
-            >
-              <span className="flex items-center justify-center text-lg text-red-400">
-                <svg
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
-                </svg>
-              </span>
-              <span className="ml-3">Logout</span>
-            </a>
-          </li>
-          </Link>
+          
         </ul>
       </div>
     </div>
