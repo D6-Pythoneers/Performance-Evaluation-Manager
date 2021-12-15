@@ -3,7 +3,7 @@ import React from "react";
 export default function TeacherDashboard({resources}) {
   console.log(resources);
   return (
-    <div className="w-full p-8" style={{"minHeight":"89vh"}}>
+    <div data-cy="teacher-dashboard" className="w-full p-8" style={{"minHeight":"89vh"}}>
       <div className="flex justify-around w-full">
         <div className="flex p-4 bg-white rounded-xl">
           <img alt = "Academic Year" src="https://img.icons8.com/color/48/000000/calendar--v1.png" />
@@ -80,12 +80,12 @@ export default function TeacherDashboard({resources}) {
               <th className="px-4 py-3">Goal</th>
             </tr>
           </thead>
-          <tbody className="bg-white">
+          <tbody data-cy="goals-table" className="bg-white">
             {resources.schoolEvaluations[0].goals.map((goal,index)=>{return(
               <tr className="text-gray-700" key={index}>
               <td className="px-4 py-3 font-semibold border text-ms">{index+1}</td>
               <td className="px-4 py-3 text-xs border">
-                <span className="px-2 py-1 font-semibold rounded-sm">
+                <span data-cy="goal-entry" className="px-2 py-1 font-semibold rounded-sm">
                   {goal.goal}
                 </span>
               </td>
