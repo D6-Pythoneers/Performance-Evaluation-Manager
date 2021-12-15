@@ -23,3 +23,16 @@ describe("move to profile as a manager", () => {
 
     })
 })
+
+describe("move to dashboard as a teacher", () => {
+    beforeEach(() => {
+        cy.login("majed", "Pass@123")
+        cy.get('[data-cy=loading-image]')
+    })
+
+    it("moves to profile as a manger", () => {
+        cy.wait(10000)
+        cy.visit('http://localhost:3000/dashboard')
+
+    })
+})
