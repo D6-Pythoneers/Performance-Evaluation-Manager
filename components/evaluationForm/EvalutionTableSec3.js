@@ -1,10 +1,14 @@
 import React from 'react'
-
+import {useState} from "react"
 export default function EvalutionTableSec3() {
+    const [showMe, setShowMe] = useState(false);
+    function toggle(){
+    setShowMe(!showMe);
+}
     return (
         <div>
-            <h2 className="pb-4 mb-4 font-bold text-left bg-gray-200">Part Three: The goals that the teacher calls them to achieve and allocates to them (20%) (to be selected from the teacher’s professional growth plan and the school development plan in agreement between the school principal and the teacher)</h2>
-            <form className="w-full bg-white ">
+            <h2 onClick={toggle} className="pb-4 mb-4 font-bold text-left bg-gray-200">Part Three: The goals that the teacher calls them to achieve and allocates to them (20%) (to be selected from the teacher’s professional growth plan and the school development plan in agreement between the school principal and the teacher)</h2>
+            <form style={{display: showMe?"inline-table":"none"}} className="w-full bg-white ">
                 <table>
                     <thead className="w-full text-white bg-gray-500 ">
                         <tr>
