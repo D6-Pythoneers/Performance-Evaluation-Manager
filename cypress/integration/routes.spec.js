@@ -33,6 +33,7 @@ describe("move to dashboard as a teacher", () => {
     it("moves to profile as a manger", () => {
         cy.wait(10000)
         cy.visit('http://localhost:3000/dashboard')
+        cy.get('[data-cy=]')
 
     })
 })
