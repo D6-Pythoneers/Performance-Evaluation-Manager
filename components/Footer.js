@@ -7,8 +7,7 @@ export default function Footer() {
 
 
       <div
-        className="pt-4 md:flex md:items-center md:justify-center "
-        style={{ borderTop: "1px solid white" }}
+        className="pt-4 md:flex md:items-center md:justify-center border-t-2 border-blue-300  outline-none focus:bg-gray-300"
       >
         <ul className="">
           <li

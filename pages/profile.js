@@ -11,7 +11,7 @@ export default function ManagerProfile () {
         <Header user={user} />
         <div className="flex w-full ">
           <Pagination />
-          <div className="w-full bg-gray-100 " style={{ "height": "80vh" }}>
+          <div className="w-full bg-gray-100 " style={{ "height": "87vh" }}>
             <div className="flex flex-col w-full h-full px-4 m-auto mx-auto bg-gray-200 bg-center bg-no-repeat bg-cover opacity-100 font-poppins">
               <div className="flex items-center m-auto mt-8 bg-blue-600 rounded-full w-80 h-80">
                 <img
