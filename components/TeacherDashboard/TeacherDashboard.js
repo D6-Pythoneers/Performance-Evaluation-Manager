@@ -113,7 +113,7 @@ export default function TeacherDashboard ({ resources }) {
           </tbody>
         </table>
         {/* ************************ */}
-        <table className="w-2/5">
+        <table data-cy="goals-table" className="w-2/5">
           <thead>
             <tr className="font-semibold tracking-wide text-left text-gray-900 uppercase bg-gray-100 border-b border-gray-600 text-md">
               <th className="px-4 py-3">No.</th>
@@ -124,10 +124,10 @@ export default function TeacherDashboard ({ resources }) {
           <tbody className="bg-white">
             {resources.schoolEvaluations[0].goals.map((goal, index) => {
               return (
-                <tr className="text-gray-700" key={index}>
+                <tr  data-cy="goal-row" className="text-gray-700" key={index}>
                   <td className="px-4 py-3 font-semibold border text-ms">{index + 1}</td>
                   <td className="px-4 py-3 text-xs border">
-                    <span className="px-2 py-1 font-semibold rounded-sm">
+                    <span data-cy="goal-entry" className="px-2 py-1 font-semibold rounded-sm">
                       {goal.goal}
                     </span>
                   </td>
