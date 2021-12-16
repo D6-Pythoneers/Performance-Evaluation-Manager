@@ -57,7 +57,7 @@ export default function ManagerDashboard ({ resources }) {
                 <div className="mb-3 ">
                   <img
                     className="w-auto mx-auto rounded-full"
-                    src="https://thumbs.dreamstime.com/b/user-profile-line-icon-web-avatar-employee-symbol-sign-illustration-design-isolated-white-background-192379539.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIGWpazPhczs6kXKWOi1u8rTg2YeHKzCsEAQWd5EuLi4RY0qhEQTqgwBSLzsUpq74hOcU&usqp=CAU"
                     alt=""
                   />
                 </div>
