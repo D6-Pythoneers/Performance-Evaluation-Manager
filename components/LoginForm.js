@@ -27,6 +27,7 @@ export default function LoginForm () {
             type='text'
             id='username'
             placeholder='Username'
+            data-cy="login-id"
           />
         </div>
         <div>
@@ -36,12 +37,14 @@ export default function LoginForm () {
           <input
             type='password'
             id='password'
-            className='w-full p-2 mb-6 border-b-2 border-blue-300  outline-none focus:text-gray-600'
+            className='w-full p-2 mb-6 border-b-2 border-blue-300 outline-none focus:text-gray-600'
             placeholder='password'
+            data-cy="login-password"
           />
         </div>
         <div>
           <button
+          data-cy="login-submit"
             onClick={() =>
               login(
                 document.getElementById('username').value,

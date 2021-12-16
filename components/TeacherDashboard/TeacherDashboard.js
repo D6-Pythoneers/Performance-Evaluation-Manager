@@ -16,6 +16,7 @@ export default function TeacherDashboard ({ resources }) {
   console.log(resources);
   return (
     <div className="w-full p-8" style={{ "minHeight": "87vh" }}>
+
       <div className="flex justify-around w-full">
         <div className="flex p-4 bg-white rounded-xl">
           <img alt="Academic Year" src="https://img.icons8.com/color/48/000000/calendar--v1.png" />
@@ -119,6 +120,7 @@ export default function TeacherDashboard ({ resources }) {
               <th className="px-4 py-3">Goal</th>
             </tr>
           </thead>
+
           <tbody className="bg-white">
             {resources.schoolEvaluations[0].goals.map((goal, index) => {
               return (

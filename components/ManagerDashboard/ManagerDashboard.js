@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function ManagerDashboard ({ resources }) {
   
   return (
-    (<div className='w-full p-8'>
+    (<div data-cy="manager-dashboard" className='w-full p-8'>
       <div className='flex justify-around w-full'>
         <div className='flex p-4 bg-white rounded-xl'>
           <img
@@ -50,10 +50,10 @@ export default function ManagerDashboard ({ resources }) {
       {/*  */}
       <div className='flex flex-col w-full mt-12 '>
         <h2 className='ml-12 text-3xl'>Teachers</h2>
-        <div className="grid w-full grid-cols-4 m-8 ml-0 ">
+        <div data-cy="teacher-cards-container" className="grid w-full grid-cols-4 m-8 ml-0 ">
           {resources
             ? resources.schoolTeachers.map((teacher, index) => (
-              <div key={index} className="w-56 px-6 py-8 m-16 mx-16 mt-0 text-center bg-gray-800 rounded-lg shadow-lg">
+              <div data-cy="teacher-card" key={index} className="w-56 px-6 py-8 m-16 mx-16 mt-0 text-center bg-gray-800 rounded-lg shadow-lg">
                 <div className="mb-3 ">
                   <img
                     className="w-auto mx-auto rounded-full"

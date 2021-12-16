@@ -11,7 +11,7 @@ export default function ManagerProfile () {
         <Header user={user} />
         <div className="flex w-full ">
           <Pagination />
-          <div className="w-full bg-gray-100 " style={{ "height": "87vh" }}>
+          <div className="w-full bg-gray-100 " style={{ "height": "90vh" }}>
             <div className="flex flex-col w-full h-full px-4 m-auto mx-auto bg-gray-200 bg-center bg-no-repeat bg-cover opacity-100 font-poppins">
               <div className="flex items-center m-auto mt-8 bg-blue-600 rounded-full w-80 h-80">
                 <img
@@ -22,14 +22,14 @@ export default function ManagerProfile () {
               </div>
               <div className="flex items-center justify-between px-4 pt-12 m-auto">
                 <div className="flex items-center ">
-                  <div className="flex flex-col pl-4 leading-none ">
-                    <h3 className="w-full text-2xl font-bold uppercase">
+                  <div data-cy="user-data" className="flex flex-col pl-4 leading-none ">
+                    <h3 data-cy="user-name" className="w-full text-2xl font-bold uppercase">
                       Name :{user ? user.name : null}
                     </h3>
-                    <p className="mt-3 text-xl font-semibold text-gray-600">
+                    <p data-cy="user-email" className="mt-3 text-xl font-semibold text-gray-600">
                       Email : {user ? user.email : null}
                     </p>
-                    <p className="pt-1 text-lg font-light text-gray-700">
+                    <p data-cy="user-role" className="pt-1 text-lg font-light text-gray-700">
                       Role : {user ? user.role : null}
                     </p>
                   </div>
