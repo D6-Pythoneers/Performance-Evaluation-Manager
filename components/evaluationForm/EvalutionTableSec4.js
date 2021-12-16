@@ -3,6 +3,7 @@ import { useState } from "react"
 
 export default function EvalutionTableSec4() {
     const [showMe, setShowMe] = useState(false);
+    const [partFourA, setPartFourA] = useState({});
     function toggle() {
         setShowMe(!showMe);
     }
@@ -11,12 +12,44 @@ export default function EvalutionTableSec4() {
        const  myForm=document.getElementById('myForm');
         
         const data={
-            "goal":[e.target.goal1.value,e.target.goal2.value,e.target.goal3.value,e.target.goal4.value],
-            "goal_result":[e.target.goal1_result.value,e.target.goal2_result.value,e.target.goal3_result.value,e.target.goal4_result.value],
-            "max_score":[e.target.goal1_max.value,e.target.goal2_max.value,e.target.goal3_max.value,e.target.goal4_max.value],
-            "score":[e.target.goal1_min.value,e.target.goal2_min.value,e.target.goal3_min.value,e.target.goal4_min.value],
+            "first_evaluation":[
+                e.target.p4a11.value,
+                e.target.p4a21.value,
+                e.target.p4a31.value,
+                e.target.p4a41.value,
+                e.target.p4a51.value,
+                e.target.p4a61.value,
+                e.target.p4a71.value,
+                e.target.p4a81.value,
+                e.target.p4a91.value,
+                e.target.p4a101.value,
+            ],
+            "final_evaluation":[
+                e.target.p4a12.value,
+                e.target.p4a22.value,
+                e.target.p4a32.value,
+                e.target.p4a42.value,
+                e.target.p4a52.value,
+                e.target.p4a62.value,
+                e.target.p4a72.value,
+                e.target.p4a82.value,
+                e.target.p4a92.value,
+                e.target.p4a102.value,
+            ],
+            "score":[
+                e.target.p4a13.value,
+                e.target.p4a23.value,
+                e.target.p4a33.value,
+                e.target.p4a43.value,
+                e.target.p4a53.value,
+                e.target.p4a63.value,
+                e.target.p4a73.value,
+                e.target.p4a83.value,
+                e.target.p4a93.value,
+                e.target.p4a103.value,
+            ],
         }
-    setGoals(x=>[{...x,data}])
+        setPartFourA(x=>[{...x,data}])
     myForm.reset()
     }
     return (
