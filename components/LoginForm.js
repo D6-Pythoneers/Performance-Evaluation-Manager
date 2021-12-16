@@ -17,9 +17,7 @@ export default function LoginForm() {
    
 };
   return (
-    
     <div className='flex flex-col w-screen h-screen text-white'>
-      
       <div class="h-screen w-full flex justify-center items-center bg-no-repeat" style={styles}>
         <div class="bg-image w-full sm:w-1/2 md:w-9/12 lg:w-1/2 mx-3 md:mx-5 mb-96 lg:mx-0 shadow-md flex flex-col md:flex-row items-center rounded z-10 overflow-hidden bg-center bg-cover bg-gray-800">
           <div class="w-full md:w-1/2 flex flex-col justify-center items-center bg-opacity-25 bg-gray-800 backdrop">
@@ -65,9 +63,6 @@ export default function LoginForm() {
           </div>
         </div>
       </div>
-
-
-
     </div>
   )
 }
