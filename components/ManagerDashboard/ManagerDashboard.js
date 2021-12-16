@@ -53,16 +53,16 @@ export default function ManagerDashboard ({ resources }) {
         <div className="grid w-full grid-cols-4 m-8 ml-0 ">
           {resources
             ? resources.schoolTeachers.map((teacher, index) => (
-              <div key={index} className="w-56 px-6 py-8 m-16 mx-16 mt-0 text-center bg-gray-800 rounded-lg shadow-lg">
+              <div key={index} className="w-56 px-6 py-8 m-12 mx-16 mt-0 text-center bg-gray-800 rounded-lg shadow-lg">
                 <div className="mb-3 ">
                   <img
                     className="w-auto mx-auto rounded-full"
-                    src="https://i.ibb.co/3YpLCb6/15346636991003506792default-user.png"
+                    src="https://thumbs.dreamstime.com/b/user-profile-line-icon-web-avatar-employee-symbol-sign-illustration-design-isolated-white-background-192379539.jpg"
                     alt=""
                   />
                 </div>
-                <h2 className="text-xl font-medium text-white">{teacher.name}</h2>
-                <span className="block mb-5 text-white">{teacher.role}</span>
+                <h2 className="text-l font-medium text-white">{teacher.name}</h2>
+                <span className="block mb-2 text-white">{teacher.role}</span>
 
                 <a href="/evaluation" className="px-4 py-2 text-white bg-blue-800 rounded-full"
                 >Evaluate</a>
