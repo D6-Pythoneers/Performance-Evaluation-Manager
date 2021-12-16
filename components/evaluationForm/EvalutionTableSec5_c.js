@@ -1,5 +1,4 @@
 import React from 'react'
-
 function EvalutionTableSec5_c() {
     return (
         <div>
