@@ -3,7 +3,7 @@ import useSWR from 'swr'
 // import { useAuth } from '../contexts/auth'
 
 export const apiUrl = process.env.NEXT_PUBLIC_RESOURCE_URL
-import School from '../pages/api/School'
+
 export default function useResource (user) {
   // const { user } = useAuth()
   let tokens

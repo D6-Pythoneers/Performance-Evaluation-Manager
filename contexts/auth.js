@@ -19,9 +19,7 @@ export function AuthProvider (props) {
     user: null,
     login,
     logout,
-    addRow,
-    resetNewRow,
-    newRow: false,
+  
   });
   useEffect(() => {
     let tokens;
@@ -104,18 +102,7 @@ export function AuthProvider (props) {
     setState((prevState) => ({ ...prevState, ...newState }));
   }
 
-  function addRow () {
-    const newState = {
-      newRow: true,
-    };
-    setState((prevState) => ({ ...prevState, ...newState }));
-  }
-  function resetNewRow () {
-    const newState = {
-      newRow: false,
-    };
-    setState((prevState) => ({ ...prevState, ...newState }));
-  }
+
   return (
     <AuthContext.Provider value={state}>{props.children}</AuthContext.Provider>
   );

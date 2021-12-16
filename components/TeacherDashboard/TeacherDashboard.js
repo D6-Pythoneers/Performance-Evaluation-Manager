@@ -11,7 +11,7 @@ export default function TeacherDashboard ({ resources }) {
 
       }
     })
-    alert(response.data)
+
   }
   console.log(resources);
   return (
@@ -38,20 +38,7 @@ export default function TeacherDashboard ({ resources }) {
             <div className="text-gray-500">Evaluation</div>
             {/* for demo only  */}
 
-            <h4 className="text-2xl font-semibold text-gray-700">{resources ? resources.schoolEvaluations.map(evaluation => {
-              if (evaluation.user == resources.manager.id) {
-                if (!evaluation.evaluated) {
-                  return (<button
-                    onClick={() => approve_evaluation(evaluation)}
-                    className='font-semibold text-gray-700'
-                  >{evaluation.status}</button>)
-                } else {
-                  return (<span className="px-2 py-1 font-semibold leading-tight text-yellow-600 bg-green-100 rounded-sm">
-                    {evaluation.score}
-                  </span>)
-                }
-              }
-            }) : pending} </h4>
+            <h4 className="text-2xl font-semibold text-gray-700">{"in progress"}</h4>
           </div>
         </div>
         <div className="flex p-4 bg-white rounded-xl">
@@ -124,7 +111,7 @@ export default function TeacherDashboard ({ resources }) {
           <tbody className="bg-white">
             {resources.schoolEvaluations[0].goals.map((goal, index) => {
               return (
-                <tr  data-cy="goal-row" className="text-gray-700" key={index}>
+                <tr data-cy="goal-row" className="text-gray-700" key={index}>
                   <td className="px-4 py-3 font-semibold border text-ms">{index + 1}</td>
                   <td className="px-4 py-3 text-xs border">
                     <span data-cy="goal-entry" className="px-2 py-1 font-semibold rounded-sm">
