@@ -2,13 +2,74 @@ import React from 'react'
 import { useState } from "react"
 export default function EvalutionTableSec5() {
     const [showMe, setShowMe] = useState(false);
+    const [partfiveA, setPartfiveA] = useState({});
     function toggle() {
         setShowMe(!showMe);
+    }
+    function submitHandler(e){
+        e.preventDefault();
+       const  myForm=document.getElementById('myForm');
+        
+        const data={
+            "first_evaluation":[
+                e.target.p5a11.value,
+                e.target.p5a21.value,
+                e.target.p5a31.value,
+                e.target.p5a41.value,
+                e.target.p5a51.value,
+                e.target.p5a61.value,
+                e.target.p5a71.value,
+                e.target.p5a81.value,
+                e.target.p5a91.value,
+                e.target.p5a101.value,
+                e.target.p5a111.value,
+                e.target.p5a121.value,
+                e.target.p5a131.value,
+                e.target.p5a141.value,
+                e.target.p5a151.value,
+            ],
+            "final_evaluation":[
+                e.target.p5a12.value,
+                e.target.p5a22.value,
+                e.target.p5a32.value,
+                e.target.p5a42.value,
+                e.target.p5a52.value,
+                e.target.p5a62.value,
+                e.target.p5a72.value,
+                e.target.p5a82.value,
+                e.target.p5a92.value,
+                e.target.p5a102.value,
+                e.target.p5a112.value,
+                e.target.p5a122.value,
+                e.target.p5a132.value,
+                e.target.p5a142.value,
+                e.target.p5a152.value,
+            ],
+            "score":[
+                e.target.p5a13.value,
+                e.target.p5a23.value,
+                e.target.p5a33.value,
+                e.target.p5a43.value,
+                e.target.p5a53.value,
+                e.target.p5a63.value,
+                e.target.p5a73.value,
+                e.target.p5a83.value,
+                e.target.p5a93.value,
+                e.target.p5a103.value,
+                e.target.p5a113.value,
+                e.target.p5a123.value,
+                e.target.p5a133.value,
+                e.target.p5a143.value,
+                e.target.p5a153.value,
+            ],
+        }
+        setPartfiveA(x=>[{...x,data}])
+    myForm.reset()
     }
     return (
         <div>
             <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Fifth Part(A): Assessment elements for classroom performance to be filled out by (the educational supervisor and the school director, and allocated to them 55%.<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2" /></h2>
-            <form style={{ display: showMe ? "inline-table" : "none" }} className="w-full bg-white ">
+            <form onSubmit={submitHandler} id="myForm" style={{ display: showMe ? "inline-table" : "none" }} className="w-full bg-white ">
                 <table>
                     <thead className="w-full text-white bg-gray-500 ">
                         <tr>

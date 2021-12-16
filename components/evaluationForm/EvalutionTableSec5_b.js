@@ -2,14 +2,60 @@ import React from 'react'
 import { useState } from "react"
 export default function EvalutionTableSec5_b() {
     const [showMe, setShowMe] = useState(false);
-    function toggle(){
-    setShowMe(!showMe);
-}
+    const [partfiveB, setPartfiveB] = useState({});
+    function toggle() {
+        setShowMe(!showMe);
+    }
+    function submitHandler(e){
+        e.preventDefault();
+       const  myForm=document.getElementById('myForm');
+        
+        const data={
+            "first_evaluation":[
+                e.target.p5b161.value,
+                e.target.p5b171.value,
+                e.target.p5b181.value,
+                e.target.p5b191.value,
+                e.target.p5b201.value,
+                e.target.p5b211.value,
+                e.target.p5b221.value,
+                e.target.p5b231.value,
+                e.target.p5b241.value,
+                e.target.p5b251.value,
+            ],
+            "final_evaluation":[
+                e.target.p5b162.value,
+                e.target.p5b172.value,
+                e.target.p5b182.value,
+                e.target.p5b192.value,
+                e.target.p5b202.value,
+                e.target.p5b212.value,
+                e.target.p5b222.value,
+                e.target.p5b232.value,
+                e.target.p5b242.value,
+                e.target.p5b252.value,
+            ],
+            "score":[
+                e.target.p5b163.value,
+                e.target.p5b173.value,
+                e.target.p5b183.value,
+                e.target.p5b193.value,
+                e.target.p5b203.value,
+                e.target.p5b213.value,
+                e.target.p5b223.value,
+                e.target.p5b233.value,
+                e.target.p5b243.value,
+                e.target.p5b253.value,
+            ],
+        }
+        setPartfiveB(x=>[{...x,data}])
+    myForm.reset()
+    }
     return (
         <div>
             <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Fifth Part(B): Specialized Standards (10 marks .)
                 It is filled out through the specialized part of the educational supervisor’s visit<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2"/></h2>
-            <form style={{display: showMe?"inline-table":"none"}} className="w-full bg-white ">
+            <form onSubmit={submitHandler} id="myForm" style={{display: showMe?"inline-table":"none"}} className="w-full bg-white ">
                 <table>
 
                     <tbody className="text-xs text-left border border-b border-black">
