@@ -12,7 +12,7 @@ export default function TeacherDashboard ({ resources }) {
         'Authorization': 'Bearer ' + tokens.access
       }
     })
-
+  
   }
   console.log(resources);
   return (
@@ -39,7 +39,7 @@ export default function TeacherDashboard ({ resources }) {
             <div className="text-gray-500">Evaluation</div>
             {/* for demo only  */}
 
-            <h4 className="text-2xl font-semibold text-gray-700">{"in progress"}</h4>
+            <h4 className="text-2xl font-semibold text-gray-700">{"pending"}</h4>
           </div>
         </div>
         <div className="flex p-4 bg-white rounded-xl">

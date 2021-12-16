@@ -54,17 +54,18 @@ export default function ManagerDashboard ({ resources }) {
         <div data-cy="teacher-cards-container" className="grid w-full grid-cols-4 m-8 ml-0 ">
           {resources
             ? resources.schoolTeachers.map((teacher, index) => (
+
               <div data-cy="teacher-card" key={index} className="w-56 px-6 py-8 m-16 mx-16 mt-0 text-center bg-gray-800 rounded-lg shadow-lg">
                 <div className="mb-3 ">
                   <img
                     className="w-auto mx-auto rounded-full"
-                    src="https://i.ibb.co/3YpLCb6/15346636991003506792default-user.png"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIGWpazPhczs6kXKWOi1u8rTg2YeHKzCsEAQWd5EuLi4RY0qhEQTqgwBSLzsUpq74hOcU&usqp=CAU"
                     alt=""
                   />
                 </div>
                 <h2 className="text-xl font-medium text-white">{teacher.name}</h2>
                 <span className="block mb-5 text-white">{teacher.role}</span>
-                
+
                 <Link href={{ pathname: '/evaluation', query: { user: JSON.stringify(teacher), school: JSON.stringify(resources.schoolInfo[0]), evaluations: JSON.stringify(resources.schoolEvaluations) } }}>
                   <a className="px-4 py-2 text-white bg-blue-800 rounded-full">Evaluate</a>
                 </Link>
