@@ -2,13 +2,74 @@ import React from 'react'
 import { useState } from "react"
 export default function EvalutionTableSec6() {
     const [showMe, setShowMe] = useState(false);
+    const [partfiveA, setPartfiveA] = useState({});
     function toggle() {
         setShowMe(!showMe);
+    }
+    function submitHandler(e){
+        e.preventDefault();
+       const  myForm=document.getElementById('myForm');
+        
+        const data={
+            "first_evaluation":[
+                e.target.p611.value,
+                e.target.p621.value,
+                e.target.p631.value,
+                e.target.p641.value,
+                e.target.p651.value,
+                e.target.p661.value,
+                e.target.p671.value,
+                e.target.p681.value,
+                e.target.p691.value,
+                e.target.p6101.value,
+                e.target.p6111.value,
+                e.target.p6121.value,
+                e.target.p6131.value,
+                e.target.p6141.value,
+                e.target.p6151.value,
+            ],
+            "final_evaluation":[
+                e.target.p612.value,
+                e.target.p622.value,
+                e.target.p632.value,
+                e.target.p642.value,
+                e.target.p652.value,
+                e.target.p662.value,
+                e.target.p672.value,
+                e.target.p682.value,
+                e.target.p692.value,
+                e.target.p6102.value,
+                e.target.p6112.value,
+                e.target.p6122.value,
+                e.target.p6132.value,
+                e.target.p6142.value,
+                e.target.p6152.value,
+            ],
+            "score":[
+                e.target.p613.value,
+                e.target.p623.value,
+                e.target.p633.value,
+                e.target.p643.value,
+                e.target.p653.value,
+                e.target.p663.value,
+                e.target.p673.value,
+                e.target.p683.value,
+                e.target.p693.value,
+                e.target.p6103.value,
+                e.target.p6113.value,
+                e.target.p6123.value,
+                e.target.p6133.value,
+                e.target.p6143.value,
+                e.target.p6153.value,
+            ],
+        }
+        setPartfiveA(x=>[{...x,data}])
+    myForm.reset()
     }
     return (
         <div>
             <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Part(6): Evaluation elements for extra-curricular educational performance to be filled out by (the educational supervisor and the school director) and allocated for them (15%)<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2" /></h2>
-            <form style={{ display: showMe ? "inline-table" : "none" }} className="w-full bg-white ">
+            <form onSubmit={submitHandler} id="myForm" style={{ display: showMe ? "inline-table" : "none" }} className="w-full bg-white ">
                 <table>
                     <thead className="w-full text-white bg-gray-500 ">
                         <tr>
@@ -246,12 +307,12 @@ export default function EvalutionTableSec6() {
 
                             </td>
                             <td className="border border-b border-black">
-                                <textarea className="w-full mb-10 "id="p6151" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-10 "id="p6152" placeholder="Type here.."></textarea>
 
 
                             </td>
                             <td className="border border-b border-black">
-                                <textarea className="w-full mb-10 " id="p6151" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-10 " id="p6153" placeholder="Type here.."></textarea>
 
 
                             </td>
@@ -271,6 +332,9 @@ export default function EvalutionTableSec6() {
                     </tbody>
 
                 </table>
+                <button className="float-right px-4 py-2 mt-3 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 left-2/4 item-left focus:outline-none focus:shadow-outline" type="submit">
+                Send
+            </button>
             </form>
             <div className='flex mt-2 flex-row-1'>
                 <div className='flex flex-row-1 ' >
@@ -310,7 +374,7 @@ export default function EvalutionTableSec6() {
                 </div>
             </div>
             <button className="relative px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 left-2/4 item-left focus:outline-none focus:shadow-outline" type="submit">
-                Submit Form
+               Evaluate
             </button>
 
         </div>

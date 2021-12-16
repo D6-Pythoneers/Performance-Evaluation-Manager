@@ -2,13 +2,59 @@ import React from 'react'
 import { useState } from "react"
 export default function EvalutionTableSec4_b() {
     const [showMe, setShowMe] = useState(false);
+    const [partFourB, setPartFourB] = useState({});
     function toggle() {
         setShowMe(!showMe);
+    }
+    function submitHandler(e){
+        e.preventDefault();
+       const  myForm=document.getElementById('myForm');
+        
+        const data={
+            "first_evaluation":[
+                e.target.p4b11.value,
+                e.target.p4b21.value,
+                e.target.p4b31.value,
+                e.target.p4b41.value,
+                e.target.p4b51.value,
+                e.target.p4b61.value,
+                e.target.p4b71.value,
+                e.target.p4b81.value,
+                e.target.p4b91.value,
+                e.target.p4b101.value,
+            ],
+            "final_evaluation":[
+                e.target.p4b12.value,
+                e.target.p4b22.value,
+                e.target.p4b32.value,
+                e.target.p4b42.value,
+                e.target.p4b52.value,
+                e.target.p4b62.value,
+                e.target.p4b72.value,
+                e.target.p4b82.value,
+                e.target.p4b92.value,
+                e.target.p4b102.value,
+            ],
+            "score":[
+                e.target.p4b13.value,
+                e.target.p4b23.value,
+                e.target.p4b33.value,
+                e.target.p4b43.value,
+                e.target.p4b53.value,
+                e.target.p4b63.value,
+                e.target.p4b73.value,
+                e.target.p4b83.value,
+                e.target.p4b93.value,
+                e.target.p4b103.value,
+            ],
+        }
+        setPartFourB(x=>[{...x,data}])
+    myForm.reset()
     }
     return (
         <div>
             <h2 onClick={toggle} className="pb-4 mt-4 mb-4 font-bold text-left bg-gray-200">Fourth Part: (B) Evaluation elements related to career excellence and professional achievements to be filled out by the school principal and allocated for it(10%)<img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" alt="arrow" className="float-right w-6 mt-2 mr-2" /></h2>
-            <form style={{ display: showMe ? "inline-table" : "none" }} className="w-full bg-white ">
+            <form onSubmit={submitHandler} id="myForm" style={{ display: showMe ? "inline-table" : "none" }} className="w-full bg-white ">
                 <table>
                     <thead className="w-full text-white bg-gray-500 ">
                         <tr>
