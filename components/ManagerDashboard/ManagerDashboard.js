@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
+import Link from 'next/link'
 export default function ManagerDashboard ({ resources }) {
-  
+
   return (
     (<div data-cy="manager-dashboard" className='w-full p-8'>
       <div className='flex justify-around w-full'>
@@ -63,16 +64,16 @@ export default function ManagerDashboard ({ resources }) {
                 </div>
                 <h2 className="text-xl font-medium text-white">{teacher.name}</h2>
                 <span className="block mb-5 text-white">{teacher.role}</span>
-
-                <a href="/evaluation" className="px-4 py-2 text-white bg-blue-800 rounded-full"
-                >Evaluate</a>
-
+                
+                <Link href={{ pathname: '/evaluation', query: { user: JSON.stringify(teacher), school: JSON.stringify(resources.schoolInfo[0]), evaluations: JSON.stringify(resources.schoolEvaluations) } }}>
+                  <a className="px-4 py-2 text-white bg-blue-800 rounded-full">Evaluate</a>
+                </Link>
               </div>
             ))
             : false}
         </div>
 
       </div>
-    </div>)
+    </div >)
   )
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import axios from 'axios';
 import { useAuth } from "../../contexts/auth";
+import Swal from 'sweetalert2'
+
 export default function TeacherDashboard ({ resources }) {
   const { tokens } = useAuth()
   const approve_evaluation = async (eval_obj) => {
@@ -8,7 +10,6 @@ export default function TeacherDashboard ({ resources }) {
     const response = await axios.put(`${process.env.NEXT_PUBLIC_RESOURCE_URL}evaluations/${eval_obj.evaluation_id}`, eval_obj, {
       headers: {
         'Authorization': 'Bearer ' + tokens.access
-
       }
     })
 
