@@ -307,12 +307,12 @@ export default function EvalutionTableSec6() {
 
                             </td>
                             <td className="border border-b border-black">
-                                <textarea className="w-full mb-10 "id="p6151" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-10 "id="p6152" placeholder="Type here.."></textarea>
 
 
                             </td>
                             <td className="border border-b border-black">
-                                <textarea className="w-full mb-10 " id="p6151" placeholder="Type here.."></textarea>
+                                <textarea className="w-full mb-10 " id="p6153" placeholder="Type here.."></textarea>
 
 
                             </td>
@@ -332,6 +332,9 @@ export default function EvalutionTableSec6() {
                     </tbody>
 
                 </table>
+                <button className="float-right px-4 py-2 mt-3 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 left-2/4 item-left focus:outline-none focus:shadow-outline" type="submit">
+                Send
+            </button>
             </form>
             <div className='flex mt-2 flex-row-1'>
                 <div className='flex flex-row-1 ' >
@@ -371,7 +374,7 @@ export default function EvalutionTableSec6() {
                 </div>
             </div>
             <button className="relative px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 left-2/4 item-left focus:outline-none focus:shadow-outline" type="submit">
-                Submit Form
+               Evaluate
             </button>
 
         </div>
