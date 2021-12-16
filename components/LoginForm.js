@@ -1,21 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
 import { useAuth } from '../contexts/auth'
-export default function LoginForm() {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+export default function LoginForm () {
+
   const { login } = useAuth()
-  const handleLogin = (e) => {
-    e.preventDefault()
-    console.log(username, password)
-    login(username, password)
-  }
+  
   const styles = {
     background: 'url("https://miro.medium.com/max/1400/1*1Xm4NjD-yZ0NF8rOhw1dsw.gif")',
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"
-   
-};
+  
+  };
   return (
     <div className='flex flex-col w-screen h-screen text-white'>
       <div class="h-screen w-full flex justify-center items-center bg-no-repeat" style={styles}>
@@ -35,14 +30,14 @@ export default function LoginForm() {
             </h3>
             <form action="#" class="px-3 flex flex-col justify-center items-center w-full gap-3">
               <input
-                id='username' placeholder="User ID"
+                id='username' placeholder="User ID" data-cy="login-id"
                 class="px-4 py-2 w-full rounded border border-gray-300 shadow-sm text-base placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:border-blue-500"
               />
               <input id='password'
-                type="password" placeholder="Password"
+                type="password" placeholder="Password" data-cy="login-password"
                 class="px-4 py-2 w-full rounded border border-gray-300 shadow-sm text-base placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:border-blue-500"
               />
-              <button class="flex justify-center items-center bg-blue-500 hover:bg-blue-600 text-white focus:outline-none focus:ring rounded px-3 py-1"
+              <button data-cy="login-submit" class="flex justify-center items-center bg-blue-500 hover:bg-blue-600 text-white focus:outline-none focus:ring rounded px-3 py-1"
                 onClick={() =>
                   login(
                     document.getElementById('username').value,
@@ -55,7 +50,7 @@ export default function LoginForm() {
               </button>
             </form>
             <p class="text-gray-700 text-sm mt-2 ml-56">
-              Need Help?
+
               <a href="#" class="text-blue-500 hover:text-blue-900 mt-3 focus:outline-none font-bold underline">
                 Support
               </a>
