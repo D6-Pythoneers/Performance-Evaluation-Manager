@@ -8,11 +8,13 @@
     "cypress:run": "cypress run"
   },
   "dependencies": {
+    "@babel/core": "^7.16.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "axios": "^0.24.0",
+    "babel-plugin-istanbul": "^6.1.1",
     "jsonwebtoken": "^8.5.1",
     "next": "latest",
     "react": "^17.0.2",
@@ -21,6 +23,7 @@
     "swr": "^1.1.1"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.9.12",
     "autoprefixer": "^10.4.0",
     "cypress": "^9.1.1",
     "eslint": "^8.4.1",
