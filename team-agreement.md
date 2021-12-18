@@ -1,25 +1,27 @@
 # Team Agreement
 
 ## Team members
+
 - Majed Al Swaeer
 - Renad Alkhalafat
 - Hamza Ahmad
 - Odeh Abuzaid  - Team Leader
 
-
 ## Cooperation Plan
-Key strengths of each person on the team?
-  - **Odeh AbuZaid** : Team player, commitment
-  - **Renad Al-khlafat**: Critical Thinking, problem solving
-  - **Majed Al-Swaeer**:  Attention to too much details, adaptation
-  - **Hamza Ahmad**: Abstraction , fast learner
 
+Key strengths of each person on the team?
+
+- **Odeh AbuZaid** : Team player, commitment 
+- **Renad Al-khlafat**: Critical Thinking, problem solving
+- **Majed Al-Swaeer**:  Attention to too much details, adaptation
+- **Hamza Ahmad**: Abstraction , fast learner
 
 ## Strengths in the execution
+
 We can make a combinations of these all strengths while we are working in a team, every individual has its own strength  which will be contributed in our project, our team has strength in many area which enables us to establish a great work
 
-
 ## day-to-day work plan
+
 By commitment and coopration of each individual and hard working mixed with SMART approach .
 
 Every Day we will have a briefing for upcomming and completed tasks before the daily stand-up meeting, 
@@ -75,7 +77,7 @@ Describe at least:
 - How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
 Once our idea approved , the project must be analyzed and tasks must be created and distributed among team members based on their level of skills and strengths , which will be described in our project management tool ( TRELLO ) .
 - What project management tool will be used?
-  - Trello 
+  - [Trello Board](https://trello.com/b/U50WFqkZ/pem). 
 
 ## Git Process
 
